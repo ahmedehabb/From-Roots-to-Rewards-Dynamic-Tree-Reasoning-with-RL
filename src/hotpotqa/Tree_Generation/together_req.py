@@ -5,14 +5,17 @@ import os
 import json, jsonlines
 from .provider_req import ProviderReq
 
-class OpenaiReq(ProviderReq):
-    def __init__(self, cache_path="./cache.jsonl"):
-        super().__init__(url="http://127.0.0.1:10001/api/openai/completion", cache_path=cache_path)
+class TogetherReq(ProviderReq):
+    def __init__(self):
+        super().__init__(url="http://127.0.0.1:10001/api/together/completion")
 
     def make_request(self, prompt, model, temperature, max_tokens, stop, logprobs):
         return requests.post(self.url, json={
             "model": model,
-            "prompt": prompt,
+            "messages": [
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ],
             "temperature": temperature,
             "max_tokens": max_tokens,
             "stop": stop,
@@ -22,10 +25,7 @@ class OpenaiReq(ProviderReq):
     def parse_response(self, response_json):
         return response_json['choices']
 
-
 if __name__ == "__main__":
-    caller = OpenaiReq()
-    res = caller.req2provider("你好", use_cache=True)
+    caller = TogetherReq()
+    res = caller.req2provider("Hello, guess my name !", use_cache=True)
     print(res)
-    
-    
