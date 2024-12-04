@@ -3,13 +3,13 @@ import requests
 import time
 import os
 import json, jsonlines
-from .provider_req import ProviderReq
+from hotpotqa.Tree_Generation.provider_req import ProviderReq
 
 class OpenaiReq(ProviderReq):
     def __init__(self, cache_path="./cache.jsonl"):
         super().__init__(url="http://127.0.0.1:10001/api/openai/completion", cache_path=cache_path)
 
-    def make_request(self, prompt, model, temperature, max_tokens, stop, logprobs):
+    def make_request(self, prompt, model="text-davinci-003", temperature=0, max_tokens=128, stop=None, logprobs=1):
         return requests.post(self.url, json={
             "model": model,
             "prompt": prompt,

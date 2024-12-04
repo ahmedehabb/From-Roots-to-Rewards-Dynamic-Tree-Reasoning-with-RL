@@ -3,13 +3,13 @@ import requests
 import time
 import os
 import json, jsonlines
-from .provider_req import ProviderReq
+from hotpotqa.Tree_Generation.provider_req import ProviderReq
 
 class TogetherReq(ProviderReq):
     def __init__(self):
         super().__init__(url="http://127.0.0.1:10001/api/together/completion")
 
-    def make_request(self, prompt, model, temperature, max_tokens, stop, logprobs):
+    def make_request(self, prompt, model="meta-llama/Llama-Vision-Free", temperature=0, max_tokens=128, stop=None, logprobs=1):
         return requests.post(self.url, json={
             "model": model,
             "messages": [
