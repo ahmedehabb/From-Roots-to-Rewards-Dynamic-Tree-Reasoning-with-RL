@@ -6,10 +6,10 @@ import json, jsonlines
 from hotpotqa.Tree_Generation.provider_req import ProviderReq
 
 class TogetherReq(ProviderReq):
-    def __init__(self):
-        super().__init__(url="http://127.0.0.1:10001/api/together/completion")
+    def __init__(self, cache_path="./cache.jsonl", model="meta-llama/Llama-Vision-Free"):
+        super().__init__(url="http://127.0.0.1:10001/api/together/completion", cache_path=cache_path, model=model)
 
-    def make_request(self, prompt, model="meta-llama/Llama-Vision-Free", temperature=0, max_tokens=128, stop=None, logprobs=1):
+    def make_request(self, prompt, model, temperature, max_tokens, stop, logprobs):
         return requests.post(self.url, json={
             "model": model,
             "messages": [

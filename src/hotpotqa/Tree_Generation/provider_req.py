@@ -5,26 +5,27 @@ import os
 import json, jsonlines
 
 class ProviderReq:
-    def __init__(self, url, cache_path="./cache.jsonl"):
+    def __init__(self, url, cache_path="./cache.jsonl", model=None):
         self.url = url
         self.cache = {}
         self.cache_path = cache_path
+        self.model = model  # Default model is set to None, but can be overridden in child classes
         if os.path.exists(self.cache_path):
             with open(self.cache_path, "r") as f:
                 for line in f:
                     datum = json.loads(line.strip())
                     self.cache[tuple(datum["input"])] = datum["response"]
 
-    def req2provider(self, prompt, model, temperature=0, max_tokens=128, stop=None, logprobs=1, use_cache=True):
+    def req2provider(self, prompt, temperature=0, max_tokens=128, stop=None, logprobs=1, use_cache=True):
         assert isinstance(prompt, str)
-        input = (prompt, model, max_tokens, stop, logprobs)
+        input = (prompt, self.model, max_tokens, stop, logprobs)
         if use_cache and temperature == 0 and input in self.cache:
             return self.cache[input], True
 
         # Retry logic
         for i in range(3):
             try:
-                response = self.make_request(prompt, model, temperature, max_tokens, stop, logprobs)
+                response = self.make_request(prompt, self.model, temperature, max_tokens, stop, logprobs)
                 if response.status_code != 200:
                     raise Exception(response.text)
                 break
