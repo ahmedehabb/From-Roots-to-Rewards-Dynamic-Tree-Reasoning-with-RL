@@ -1,14 +1,18 @@
-from openai_req import OpenaiReq
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), './search')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import requests
 from search.serpapi import get_question_wiki_snippet
-import os
 from transformers import AutoTokenizer
 import random
+from Tree_Generation.openai_req import OpenaiReq
 
 serp_api_key = "" # put you serp API key here
 os.environ["SERP_API_KEY"] = serp_api_key
 
-openai_caller = OpenaiReq()
+
+openai_caller = OpenaiReq("./cache.jsonl")
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 random.seed(666)
@@ -68,7 +72,7 @@ def get_cb_answer(question):
     #return "Unknow", -100
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])
     prompt = instruction + '\nQ: ' + question + '\nA:'
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
+    response, tag = openai_caller.req2provider(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
     return postprocess(response)
 
 def get_singlehop_ob_answer(question, topic_entities):
@@ -101,7 +105,7 @@ def get_singlehop_ob_answer(question, topic_entities):
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
         
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
+    response, tag = openai_caller.req2provider(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
     return postprocess(response)
 
 def aggregate_singlehop_answer(cb_answer, ob_answer):
@@ -156,7 +160,7 @@ def get_multihop_ob_answer(node, tree):
         prompt += '\nQ: ' + question + '\nA:'
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
+    response, tag = openai_caller.req2provider(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
     return postprocess(response)
 
 def calculate_score1(cot_process_logprob, qd_score, sub_answer_scores):
@@ -180,7 +184,7 @@ def aggregate_multihop_answer(node, tree):
         sub_answer_scores.append(tree[son_idx]["answer"][1])
         context += '\n' + sub_question + ' ' + sub_answer
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
+    response, tag = openai_caller.req2provider(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
     child_answer, cot_process_logprob, child_cot = postprocess(response)
     
     child_ans = child_answer
