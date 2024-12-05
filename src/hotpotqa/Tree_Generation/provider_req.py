@@ -16,7 +16,7 @@ class ProviderReq:
                     datum = json.loads(line.strip())
                     self.cache[tuple(datum["input"])] = datum["response"]
 
-    def req2provider(self, prompt, temperature=0, max_tokens=128, stop=None, logprobs=1, use_cache=True):
+    def req2provider(self, prompt, temperature=0, max_tokens=None, stop=None, logprobs=1, use_cache=True):
         assert isinstance(prompt, str)
         input = (prompt, self.model, max_tokens, stop, logprobs)
         if use_cache and temperature == 0 and input in self.cache:
