@@ -12,5 +12,6 @@ for item in raw_data:
     # print(prompt)
     # break    
 
-json.dump(prompts, open('prompts.json', 'w'), indent = 2)
+# TODO:: ensure_ascii=False that is very important, before the prompt contained a lot of \u2200 unicode characters which made model hallucinates
+json.dump(prompts, open('prompts.json', 'w'), indent = 2, ensure_ascii=False)
 print(len(prompts))
