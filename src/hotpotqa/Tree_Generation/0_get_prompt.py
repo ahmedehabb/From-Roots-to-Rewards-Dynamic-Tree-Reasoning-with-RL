@@ -2,7 +2,7 @@ import json, jsonlines
 
 instruction = '\n'.join([_.strip() for _ in open('prompt.txt').readlines()])
 
-raw_data = jsonlines.open("/data/zjj/LLMReasoning/released_data/hotpotqa__v2_test_random_500.jsonl", "r")
+raw_data = jsonlines.open("../../../released_data/hotpotqa__v2_test_random_500.jsonl", "r")
 
 prompts = []
 for item in raw_data:
