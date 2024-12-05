@@ -6,6 +6,12 @@ from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 
+os.environ['TOGETHER_API_KEY'] = os.getenv('TOGETHER_API_KEY')
+key_pool = os.getenv('TOGETHER_API_KEY').split(',')
+
+clients = [OpenAI(api_key=key, base_url="https://api.together.xyz/v1") for key in key_pool]
+client_index = 0  # Initialize the client index
+
 class Log:
     @staticmethod
     def time_str():
@@ -32,12 +38,13 @@ class Log:
 
 
 app = Flask(__name__)
-os.environ['TOGETHER_API_KEY'] = os.getenv('TOGETHER_API_KEY')
 
-client = OpenAI(
-    api_key=os.getenv('TOGETHER_API_KEY'),
-    base_url="https://api.together.xyz/v1"
-)
+def get_client():
+    """Get the next client from the pool and update the index."""
+    global client_index
+    client = clients[client_index]
+    client_index = (client_index + 1) % len(clients)  # Cycle through the clients
+    return client
 
 @app.route('/api/together/completion', methods=["POST"])
 def together_completion():
@@ -49,32 +56,30 @@ def together_completion():
     log_msg_path = os.path.join(log_dir, "completion.log")
     log_data_path = os.path.join(log_dir, "completion.jsonl")
     os.makedirs(log_dir, exist_ok=True)
-
+    client = get_client()
     try:
         # Send request to Together API
         response = client.chat.completions.create(**request.json)
-    except Exception as e:
 
+        # Log successful response
+        Log.message(log_msg_path, "Successful")
+        with open(log_data_path, "a+") as f:
+            f.write(json.dumps({
+                "request": request.json,
+                "response": response.choices[0].message.content
+            }) + "\n")
+
+        response_dict = response.to_dict()
+        return jsonify(response_dict)
+
+    except Exception as e:
         error_message = str(e)
         Log.error(log_msg_path, error_message)
         print(f"[Error] {error_message}")
-        
         # Handle specific API error cases
-        if "exceeded your current quota" in error_message or "deactivate" in error_message:
+        if "reached the rate limit specific" in error_message or "deactivate" in error_message:
             Log.error("log/exceed.log", error_message)  # Log quota errors
-            
         return abort(500, error_message)
-
-    # Log successful response
-    Log.message(log_msg_path, "Successful")
-    with open(log_data_path, "a+") as f:
-        f.write(json.dumps({
-            "request": request.json,
-            "response": response.choices[0].message.content
-        }) + "\n")
-
-    response_dict = response.to_dict()
-    return jsonify(response_dict)
-
+    
 if __name__ == '__main__':
     app.run("0.0.0.0", port=10001)
