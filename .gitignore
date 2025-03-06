@@ -1,0 +1,7 @@
+data/
+elasticsearch-8.16.1/
+log/
+released_data/
+*.env
+*.DS_Store
+*.pyc

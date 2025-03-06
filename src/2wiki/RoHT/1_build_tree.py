@@ -7,6 +7,7 @@ q2sub_q = json.load(open("../Tree_Generation/tree.json"))
 trees = []
 
 def dfs(q, tree):
+    # we can have cycles !!!! we must detect them otherwise we will fall in infinite loop :( 
     sons = []
     print(q)
     for sub_q in q2sub_q.get(q, [[]])[0]:
@@ -24,10 +25,18 @@ def dfs(q, tree):
     return idx
 
 for item in raw_data:
-    question = item['question_text'].strip()
+    try:
+        # just added this since we dont have answers for all 500 questions now, just some of them
+        question = item['question_text'].strip()
+    except:
+        continue
     assert question in q2sub_q
     tree = []
-    dfs(question, tree)
+    # just added this to overcome the cyclic problem for now
+    try:
+        dfs(question, tree)
+    except:
+        continue
     trees.append(tree)
 
 json.dump(trees, open("trees.json", "w"), indent=2)

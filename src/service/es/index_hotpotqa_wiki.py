@@ -39,7 +39,7 @@ def generate_indexing_queries_from_bz2(bz2file, dry=False):
     return '\n'.join(body)
 
 # es = Elasticsearch(timeout=100)
-es = Elasticsearch(hosts="http://localhost:9200")
+es = Elasticsearch(hosts="http://localhost:9200", timeout=100)
 def index_chunk(chunk):
     res = es.bulk(index=WIKIPEDIA_INDEX_NAME, body='\n'.join(chunk), timeout='100s')
     assert not res['errors'], res
@@ -100,7 +100,7 @@ def main(args):
         print('Indexing...')
         chunksize = 50
         for chunk in tqdm(chunks(all_queries, chunksize), total=(len(all_queries) + chunksize - 1) // chunksize):
-            res = es.bulk(index=WIKIPEDIA_INDEX_NAME, body='\n'.join(chunk), timeout='100s')
+            res = es.bulk(index=WIKIPEDIA_INDEX_NAME, body='\n'.join(chunk), timeout='1h')
             assert not res['errors'], res
 
     print(f"{count} documents indexed in total")

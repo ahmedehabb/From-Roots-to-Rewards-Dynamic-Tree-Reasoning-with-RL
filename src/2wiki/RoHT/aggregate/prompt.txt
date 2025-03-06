@@ -1,4 +1,9 @@
-Given a qeustion and a context, answer the question and explain why.
+Given a question and context, answer the question in the same format as the examples provided, citing the relevant context first and then providing the answer. If you are unsure, respond with "Unknown."
+Question is given in the following format:
+Q: [Question]
+A:
+Answer in the following format:
+[Explanation]. So the answer is: [Answer]
 
 #
 Context:

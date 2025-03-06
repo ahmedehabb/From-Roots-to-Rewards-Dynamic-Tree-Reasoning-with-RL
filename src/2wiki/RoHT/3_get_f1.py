@@ -12,10 +12,16 @@ for item in json.load(open("../../../data/2wiki/dev.json")):
 raw_data = [json.loads(line.strip()) for line in open('../../../released_data/2wikimultihopqa__v2_test_random_500.jsonl')]
 q2gold = {}
 for item in raw_data:
-    question = item['question_text'].strip()
-    gold = item['answers_objects'][0]['spans'][0]
-    q_type = id2type[item["question_id"]]
-    q2gold[question] = (gold, q_type)
+    try:
+        question = item['question_text'].strip()
+        # TODO:: should add it later but run prompts again 
+        # question = re.sub(r'\s+', ' ', question)
+        gold = item['answers_objects'][0]['spans'][0]
+        q_type = id2type[item["question_id"]]
+        q2gold[question] = (gold, q_type)
+    except Exception as e:
+        # If question not found in question_decompositions, this means something went wrong in the proccess maybe in json parsing in prev steps of tree generation
+        print("ERROR CASE", e)
 
 trees = json.load(open("./results/test.json", "r"))
 metrics = {}
@@ -28,6 +34,11 @@ for i, tree in enumerate(trees):
     question, answer = node["question"], node["answer"][0]
     q2a[question] = answer
     gold, q_type = q2gold[question]
+    print("question", question)
+    print("question type", q_type)
+    print("answer", answer)
+    print("gold", gold)
+    print("------------------------------")
     em, f1, prec, recall = update_answer(metrics["all"], answer, gold)
     update_answer(metrics[q_type], answer, gold)
 

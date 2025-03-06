@@ -18,7 +18,7 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-WIKIPEDIA_INDEX_NAME='2wiki_paragraph_3'
+WIKIPEDIA_INDEX_NAME='2wiki_paragraph'
 
 core_title_matcher = re.compile('([^()]+[^\s()])(?:\s*\(.+\))?')
 core_title_filter = lambda x: core_title_matcher.match(x).group(1) if core_title_matcher.match(x) else x

@@ -2,11 +2,13 @@ import json
 from collections import defaultdict
 
 raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_test_random_500.jsonl')]
-q2sub_q = json.load(open("../Tree_Generation/tree.json"))
-q2dq = json.load(open("../Tree_Generation/question_decompositions.json"))
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_dev_random_100.jsonl')]
+q2sub_q = json.load(open("../Tree_Generation/tree-testset-1.json"))
+q2dq = json.load(open("../Tree_Generation/question_decompositions-testset-1.json"))
 trees = []
 
 def dfs(q, tree):
+    # we can have cycles !!!! we must detect them otherwise we will fall in infinite loop :( 
     sons = []
     for sub_q in q2sub_q.get(q, [[]])[0]:
         son_idx = dfs(sub_q, tree)
@@ -24,13 +26,21 @@ def dfs(q, tree):
 
 for item in raw_data:
     question = item['question_text'].strip()
-    question = list(q2dq[question].keys())[0]
+    # just added this since we dont have answers for all 500 questions now, just some of them
+    try:
+        question = list(q2dq[question].keys())[0]
+    except:
+        continue
     assert question in q2sub_q, question
     tree = []
-    dfs(question, tree)
+    # just added this to overcome the cyclic problem for now
+    try:
+        dfs(question, tree)
+    except:
+        continue
     trees.append(tree)
 
-json.dump(trees, open("trees.json", "w"), indent=2)
+json.dump(trees, open("trees-testset-1.json", "w"), indent=2)
     
 
     

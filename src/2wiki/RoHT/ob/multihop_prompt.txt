@@ -1,4 +1,6 @@
-Given a question and the relevant Wikipedia text, answer the question and explain why. If you are unsure, answer Unknown.
+Given a question and context, answer the question in the same format as the examples provided, citing the relevant context first and then providing the answer. If you are unsure, respond with "Unknown."
+Answer in the following format:
+[Explanation]. So the answer is: [Answer]
 
 #1 Wikipedia Title: Hypocrite (film)
 Text: Hypocrite (Spanish: Hipócrita..!) is a 1949 Mexican thriller film directed by Miguel Morayta and starring Antonio Badú, Leticia Palma, Carmen Molina and Luis Beristáin. The film included the song "Hipócrita". The film's sets were designed by Francisco Marco Chillet.

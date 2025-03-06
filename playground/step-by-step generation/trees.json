@@ -1,0 +1,35 @@
+[
+  [
+    {
+      "idx": 0,
+      "question_text": "What was the typical page count of Weird Tales magazine during the 1930s?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Was Robert E. Howard a frequent contributor to Weird Tales magazine during the 1930s?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Was the fiction magazine in which Robert E. Howard wrote in 1930s primarily Weird Tales magazine?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Typically how many pages were in the fiction magazine in which Robert E. Howard wrote in 1930s?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.13696574363460032
+    }
+  ]
+]

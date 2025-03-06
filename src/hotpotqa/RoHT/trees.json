@@ -1,0 +1,2401 @@
+[
+  [
+    {
+      "idx": 0,
+      "question_text": "Into which river does Pack Creek run after it goes through the Spanish Valley?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the length of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the length of the river into which Pack Creek runs after it goes through the Spanish Valley?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.037906761345288836
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which battle during WWII did North Midland Divisional Engineers take part in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many weeks did <1> go on for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "North Midland Divisional Engineers took part in a battle during WWII that went on for how many weeks ?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05281731587528275
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the songwriter of \"What Are We Doin' Lonesome\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What trio is <1> from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What trio was the songwriter of \"What Are We Doin' Lonesome\" from?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03466517131347214
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In which province is Baraki Barak District situated?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the capital of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Baraki Barak District is situated in the western part of a province whose capital is what?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.040204145423387724
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What books was Atlas Shrugged a film based on?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who is a proponent of <1> philosophy?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Atlas Shrugged was a film based on the books by a proponent of what philosophy?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.2013785076035285
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "How many members does Dada have?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many members does D-J have?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which has more members, Dada or D-J?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.029484046122773156
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "On which album is the song \"She's a Mystery to Me\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which label released <1> in 1989?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "\"She's a Mystery to Me\" is a song on an album released in 1989 by what label?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.09574771335480585
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which NBA team does Jalen Jones play for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where does <1> play their home games?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Jalen Jones plays basketball for an NBA team that plays their home games in what arena?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05810753180127478
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where do the Aztecs play?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was the former name of <1>, from 1997-2017?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was the former name of the stadium, from 1997-2017, where the Aztecs play?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.033106735783852495
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which shopping mall is served by the Merrick Boulevard buses?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the gross leasable area of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the gross leasable area of the shopping mall served by the Merrick Boulevard buses?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.018777657628037778
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is Leycesteria native to Australia?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is Anigozanthos native to Australia?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Are both Leycesteria and Anigozanthos native to Australia?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.01031784047193409
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where did Anna Aglatova make her first public appearance in 2005?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In which Moscow theatre was <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Anna Aglatova made her first public appearance at which Moscow theatre in 2005?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07248976916424704
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Puerto Rican hurdler and sprinter did the University at Albany, SUNY send to a competition?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "To which competition did the University at Albany, SUNY send <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "To which competition did the University at Albany, SUNY send a Puerto Rican hurdler and sprinter?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.042987737952721795
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What attraction was replaced by Monsters, Inc. Laughing Floor on April 2,2007?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was unique about <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was unique about the attraction that was replaced by Monsters, Inc. Laughing Floor on April 2,2007?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02349400920166133
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What sport is Olaf Eller involved in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What sport is Lars Eller involved in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Both Olaf Eller and Lars Eller are involved in which sport?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.030712425707328638
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which album of Kraftwerk reached number 25 on the US \"Billboard\" Hot 100 chart?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which album did the band Kraftwerk release after <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which album did the band Kraftwerk release after their successful album which reached number 25 on the US \"Billboard\" Hot 100 chart?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.050179640606244164
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What movie did Pitof direct?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which movie had an action-adventure tie-in video game based off of it in 2004?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What movie did Pitof direct which had an action-adventure tie-in video game based off of it in 2004?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.06824428232088267
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which supernatural horror films did Miles Doleac have a role in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the one that <1> had a role in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What supernatural horror film did Miles Doleac have a role in?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.1962690433222213
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who acted in the film and television series, \"Harry and the Hendersons\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who worked with Danny Glover?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who acted in the film and television series, \"Harry and the Hendersons,\" and also worked with Danny Glover?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02547156812939423
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Indian actresses are a mother and daughter duo?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What type of films do <1> appear in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Mother and daughter duo Indian actresses appear in which type of films",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0585317712947875
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is Boy Hits Car a post-punk band?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is The The a post-punk band?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which is a post-punk band, Boy Hits Car or The The?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.014839670986899546
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who coached the 1986-87 UNLV Runnin' Rebels?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many times did <1> fail to win 20 games in a season?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "How many times did the man who coached the 1986-87 UNLV Runnin' Rebels fail to win 20 games in a season?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.016630908420772857
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the Adult Swim skit show that Odd Future had?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who are the executive producer of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who are the executive producer of the Adult Swim skit show that Odd Future had?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.053136592120761196
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the author of the \"The Dagger and the Coin\" fantasy series?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What award was <1> nominated for in 2017?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The author of the \"The Dagger and the Coin\" fantasy series was nominated for what award in 2017?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.011430859426772499
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where is Oak Beach, New York situated?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is Great South Bay situated?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What island are <1> and <2> both situated between?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Oak Beach, New York and Great South Bay are both situated between what same island?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.06360989438161117
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Major is the base named after?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What airplane was <1> test-flying?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.10992169915333096
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was the commander of the Twelfth United States Army Group?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who was the first chairman of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The Twelfth United States Army Group commander was the first chairman of what?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.035205259394912
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the English computer scientist, mathematician, logician, cryptanalyst, philosopher and theoretical biologist that Heinrich Scholz was a peer of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Heinrich Scholz was a peer of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Heinrich Scholz was a peer of what English computer scientist, mathematician, logician, cryptanalyst, philosopher and theoretical biologist?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04953888547927917
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What are the studio albums released by Richard Melville Hall?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the third one of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was the third studio album released by Richard Melville Hall?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12439467498839878
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which medieval fortress is to the north of Yellowcraig?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was <1> abandoned?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When was the medieval fortress abandoned that is to the north of Yellowcraig?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.031799598401622275
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What kind of food does Vocelli Pizza serve?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What kind of food does Noble Roman's serve?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Vocelli Pizza and Noble Roman's serve which kind of food?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.026976341783712606
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Was Zane Grey a dentist?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Was Bhabananda Deka a dentist?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which author was a dentist, Zane Grey or Bhabananda Deka?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0241789164641065
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What public house is Mick Carter the landlord of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the address of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Mick Carter is the landlord of a public house located at what address?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.06130265076326809
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the name of one of the primary holders of Schottenstein Stores Corp?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which one was born in 1954?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is name of one of the primary holders of Schottenstein Stores Corp which was born in 1954?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.08498634537399137
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What city was the capital of the Ostrogothic Kingdom?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the birth place of Ornella Fiorentini?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.018628844370115003
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which hotel is home to the Cirque du Soleil show Mystere?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many rooms are in <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "How many rooms are in the hotel that is home to the Cirque du Soleil show Mystere?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.027430988370698847
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the recipient of the 2016 Best Footballer in Asia?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What year was <1> born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What year was the recipient of the 2016 Best Footballer in Asia born?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05945828329450423
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which firm owns Babycham?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which country is <1> in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which country is the firm that owns Babycham located?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05381229209521944
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Orchestra debuted on January 1, 1988?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Of what ethnicity is the founder of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Of what ethnicity is the founder of the Orchestra which debuted on January 1, 1988?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0300623896740648
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When was Cha Cha Cohen formed?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was Swervedriver formed?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which band formed first Cha Cha Cohen or Swervedriver?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.051138772982889415
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What movement did August Brancart publish literature from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where was <1> centered?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where was the movement that August Brancart published literature from centerd?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05034973509997
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In which event did marie gisele eleme asse win two medals in 2017?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What city will host <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "what city will host the event in which marie gisele eleme asse won twoo medals in 2017",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.037202016327064186
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the space-themed roller coaster in Walt Disney World Quest: Magical Racing Tour?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was <1> opened?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Walt Disney World Quest: Magical Racing Tour includes the space-themed roller coaster that was opened on what date?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05899128667384221
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When was Dame Zara Kate Bate born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was Harold Edward Holt born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was born first Dame Zara Kate Bate or Harold Edward Holt?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.021496969461266998
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which actor starred in \"The Best Years of Our Lives\" in 1946?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which actor starred in \"The Crowded Sky\" in 1960?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which actor starred in both \"The Best Years of Our Lives\" in 1946 and \"The Crowded Sky\" in 1960?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.007428632541112571
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the name of the song that the Jason Hook album \"Safety Dunce\" is a play on the words of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In what year was <1> released?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The name od the Jason Hook album \"Safety Dunce\" is a play on the words of a song released in what year?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07370956533254214
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Staten Island Summer starred which actress?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Was <1> a cast member of \"Saturday Night Live\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Staten Island Summer, starred what actress who was a cast member of \"Saturday Night Live\"?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.084635824757878
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In which county did Caleb Stegall serve as District attorney?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the most populous city in <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the most populous city in the county where Caleb Stegall served as District attorney?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.01723164319134346
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the BBC comedy that Dianne Morgan and Joe Wilkinson are a part of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the group called in <1> \"Two Episodes of Mash\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "what is the group called that Dianne Morgan and Joe Wilkinson a part of in the BBC comedy \"Two Episodes of Mash\"?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12261910915619863
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What did Masters and Johnson label while researching?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What were Masters and Johnson researching?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Masters and Johnson labeled the orgasmic platform while researching what?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12049805518236527
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In the 2004 Hockey film, who played the USA coach?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who produced the 2004 Hockey film and is a former major league baseball pitcher?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "in the 2004 Hockey film produced by a former major league baseball pitcher who played the USA coach?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12915654433285326
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is Anticimex's parent company?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is <1> headquartered?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where is Anticimex's parent company headquartered?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0556490480803995
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In which park is this cabin built in 1925 located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What does <1> encompass over 1 million acre and includes parts of two?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "This cabin built in 1925 is located in a park encompasses over 1 million acre and includes parts of two what?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.13736617192472608
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which album is showcased in Still Reigning?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Kerrang! described <1> as what?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Still Reigning is a live performance DVD that showcases an album described by Kerrang! as what?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.1414397740927048
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which runner-up from \"American Idol\" wrote the country song?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the title of the country song written by <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which runner-up from \"American Idol\" wrote country song \"Next Boyfriend\"?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07956948730090552
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What annual gathering inlcudes David Starfire?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where does <1> take place?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What annual gathering that inlcudes David Starfire takes place at Black Rock City?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07161859647456142
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "How old is Johan Mj\u00e4llby?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "How old is Neil Lennon?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "How many months apart are <1> and <2>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "How many months apart are Johan Mj\u00e4llby and Neil Lennon in age?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.03789229931798032
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which British-Irish girl group based in London, England filled two positions in The Voice of Ireland?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many positions were filled in The Voice of Ireland by <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Two positions were filled in The Voice of Ireland by which British-Irish girl group based in London, England?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.06661851665675594
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is James Bourne a band member of McBusted?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is James Bourne a band member of The Auteurs?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Is James Bourne a band member of both McBusted and The Auteurs?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.019625151600932964
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is Scott Treleaven credited with working in both films and photography?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is Edmund Mortimer credited with working in both films and photography?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which of these men, Scott Treleaven and Edmund Mortimer, is credited with working in both films and photography?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02002875788235566
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the writer of the drama \"Ingenious\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In what year was <1> born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "In what year was the writer of the drama \"Ingenious\" born?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0319761800891628
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What city is Charles Prince Airport approximately 16 km northwest of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was <1> called Salisbury?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The city Charles Prince Airport is approximately 16 km northwest of was called Salisbury until what year?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04615431026729792
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What genre does Naseer & Shahab play?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In what decade did <1> dominate radio?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Naseer & Shahab is a Pakistani band playing a genre that dominated radio in what decade?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05700724340320084
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What was the sponsor of The Littlewoods Ireland Carnogie Leagues in 2008?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was <1> known as?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "In 2008, The Littlewoods Ireland Carnogie Leagues sponsor known as?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.08907371993310519
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is Don Giovanni an opera with three acts?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is Cardillac an opera with three acts?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Are both Don Giovanni and Cardillac operas with three acts?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03062824987939666
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is Chris Jericho's profession?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is Gary Barlow's profession?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What type of profession does Chris Jericho and Gary Barlow have in common?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02599729991773315
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When was George Atzerodt born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was Andrew Johnson born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was older, George Atzerodt or Andrew Johnson?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03875276115394778
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What legend inspired Ghostkeeper's plot?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "The legend lends its name to what type of medical condition?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Ghostkeeper's plot is inspired by a legend that lends its name to what type of medical condition?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12157330813463958
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which team had an 11-1 regular season record?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What game did <1> play in for the BCS title game?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What game did the team with an 11-1 regular season record play in for the BCS title game?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.018339176778378666
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Dan Scalco is best known as a contributing author for which magazine?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who owns <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Dan Scalco is best known as a contributing author for a magazine owned by who?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.08296300065746134
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When did Max Oph\u00fcls pass away?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When did Shirley Clarke pass away?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who passed away first Max Oph\u00fcls and Shirley Clarke ?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.029117101433455
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "James Garner had a role in which 2004 romantic drama?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who directed <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "James Garner had a role in the 2004 romantic drama directed by whom?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04938345863600523
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Minnesota band did Slim Dunlap join in 1987?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What role did Slim Dunlap take in <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What role did Slim Dunlap take when he joined the Minnesota band the Replacements in 1987?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05697155017432333
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the main character in Unbroken?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What did <1> do in the Olympics?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What did the main character in Unbroken do in the Olympics?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02776784247868409
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What was the size of the 1700 Cascadia earthquake?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who predicted <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was the size of the 1700 Cascadia earthquake predicted by Kenji Satake?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07052556676117143
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Is Aloinopsis an ice plant?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is Eriogonum an ice plant?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Are both Aloinopsis and Eriogonum ice plants?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.01511532895841476
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What music group from Braintree, Essex, was formed in 1990?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Hotride is the fifteenth single released by <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Hotride is the fifteenth single released by what music group from Braintree, Essex, that was formed in 1990?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05326849782415321
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the American retired professional basketball player who is current president of basketball operations for the Los Angeles Lakers?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "William Novac co-wrote the memoir of <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "William Novac co-wrote the memoir of what American retired professional basketball player who is current president of basketball operations for the Los Angeles Lakers?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04203609618769388
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What Amtrak flagship includes BWI Rail Station as one of its intercity services?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Is <1> an Amtrak flagship?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What service is an Amtrak flagship that includes BWI Rail Station as one of its Amtrak intercity services?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.15600684972965378
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which museum explores the impact of modern conflicts on people and society?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which light rail system would one use to visit <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which light rail system would one use to visit the museum that explores the impact of modern conflicts on people and society?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.011127488743159998
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which group of people nicknamed the US Army's regiment \"Buffalo Soldiers\"?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In which regiment did Thomas Shaw win the Medal of Honor during the Indian Wars?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "WHICH GROUP OF PEOPLE NICKNAMED THE US ARMY'S REGIMENT \"BUFFALO SOLDIERS\" IN WHICH THOMAS SHAW WON THE MEDAL OF HONOR DURING THE INDIAN WARS?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07215500560884305
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which opera did Repertoire of Pl\u00e1cido Domingo appear in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who wrote the opera based on a play by William Shakespeare?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Repertoire of Pl\u00e1cido Domingo appeared in an opera written by whom which was based on a play by William Shakespeare?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.11907087123891069
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which famous fashion show has Stella Maxwell been a model for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Since when has Stella Maxwell been a model for <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Stella Maxwell has been a model for a famous fashion shown since when?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07019931746852814
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In 1992 where were all matches of Spengler Cup played?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the home arena of <1> professional Swiss ice hockey club?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "in 1992 Spengler Cup all matches were played at the home arena of what professional Swiss ice hockey club",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.12507603759458244
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was a student of Rolls Gracie?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who ran the Gracie Humait\u00e1 school in Rio de Janeiro?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was a student of Rolls Gracie and ran the Gracie Humait\u00e1 school in Rio de Janeiro?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.017133868647776156
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When was Allure founded?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was Genre founded?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which magazine was founded first, Allure or Genre?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03402016028553429
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which Equerry to a British monarch was married to whom?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who was a Marchioness Camden?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which Equerry to a British monarch was married to a Marchioness Camden?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0962617860724987
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "How many species does Clianthus have?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many species does Callicoma have?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which has more species, Clianthus or Callicoma?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07136347748003476
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which company based in Denmark manufactures the line of toys?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What city hosts an annual convention devoted to <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What city hosts an annual convention devoted to a line of toys manufactured by a company based in Denmark?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.08862991419062921
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who played Jimmy Kemp's mother in the nuclear war drama where Rita May played Jimmy Kemp's mother?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who directed the nuclear war drama where <1> played Jimmy Kemp's mother?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who directed the nuclear war drama where Rita May played Jimmy Kemp's mother?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.07898784279375769
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which athlete rode 400 miles across his country to bring attention to the plight of the disabled in the country?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Oprah Winfrey narrated a documentary about <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Oprah Winfrey narrated a documentary about this athlete who rode 400 miles across his country to bring attention to the plight of the disabled in the country?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.022662401012066583
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the founder of Nyaya school of Hindu philosophy?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What text is composed by <1> and is used in the development of Indian logic?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "How many books are in <2>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "How many books are in the text composed by the founder Nyaya school of Hindu philosophy and is used in the development of Indian logic?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.057567514109501436
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which country has only one-tenth of its historical boundaries?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the name of the director from <1>?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the name of the director from a country which has only one-tenth of its historical boundaries?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03272645300963885
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which films was Shannyn Sossamon in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which of <1> was directed by Michael Lehmann?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which film was Shannyn Sossamon in that was directed by Michael Lehmann?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04531369306751538
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What area once connected Great Britain to continental Europe?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was <1> submerged by a massive landslide along 290 km of the continental shelf?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What area once connected Great Britain to continental Europe, and is thought to have been submerged around 6,200 BCE by a massive landslide along 290 km of the continental shelf?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03479815292327468
+    }
+  ]
+]
