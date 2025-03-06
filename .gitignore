@@ -2,6 +2,9 @@ data/
 elasticsearch-8.16.1/
 log/
 released_data/
+bin/
+lib/
+pyvenv.cfg
 *.env
 *.DS_Store
 *.pyc

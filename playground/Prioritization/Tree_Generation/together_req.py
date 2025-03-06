@@ -13,10 +13,12 @@ class ProviderReq:
         self.cache_path = cache_path
         self.model = model  # Default model is set to None, but can be overridden in child classes
         if os.path.exists(self.cache_path):
+            print("Loading cache from %s" % self.cache_path)
             with open(self.cache_path, "r") as f:
                 for line in f:
                     datum = json.loads(line.strip())
                     self.cache[tuple(datum["input"])] = datum["response"]
+            print("Loaded %d cached responses" % len(self.cache))
 
     def req2provider(self, prompt, temperature=0, max_tokens=None, stop=None, logprobs=1, use_cache=True):
         assert isinstance(prompt, str)
