@@ -74,8 +74,8 @@ def get_cb_answer(question):
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])
     prompt = instruction + '\nQ: ' + question + '\nA:'
     # print("get_cb_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop= None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop= None, use_cache=True)
 
     return postprocess(response)
 
@@ -112,8 +112,8 @@ def get_singlehop_ob_answer(question, topic_entities):
     
     # print("single hop prompt", prompt)
 
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
 
     # print("get_singlehop_ob_answer \n", response)
     return postprocess(response)
@@ -171,8 +171,8 @@ def get_multihop_ob_answer(node, tree):
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
     # print("get_multihop_ob_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
 
     return postprocess(response)
 
@@ -191,15 +191,18 @@ def aggregate_multihop_answer(node, tree):
     qd_score = node["qd_logprob"]
     context = ''
     sub_answer_scores = []
+    print("tree passed", tree)
     for son_idx in node["sons"]:
         sub_question = tree[son_idx]["question"]
         sub_answer = tree[son_idx]["answer"][0]
         sub_answer_scores.append(tree[son_idx]["answer"][1])
         context += '\n' + sub_question + ' ' + sub_answer
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
+
+    print("aggregate_multihop_answer \n", prompt)
     # print("aggregate_multihop_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
     child_answer, cot_process_logprob, child_cot, child_token_logprobs = postprocess(response)
     
     child_ans = child_answer
