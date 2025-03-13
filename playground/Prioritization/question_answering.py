@@ -191,7 +191,6 @@ def aggregate_multihop_answer(node, tree):
     qd_score = node["qd_logprob"]
     context = ''
     sub_answer_scores = []
-    print("tree passed", tree)
     for son_idx in node["sons"]:
         sub_question = tree[son_idx]["question"]
         sub_answer = tree[son_idx]["answer"][0]
@@ -199,7 +198,6 @@ def aggregate_multihop_answer(node, tree):
         context += '\n' + sub_question + ' ' + sub_answer
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
 
-    print("aggregate_multihop_answer \n", prompt)
     # print("aggregate_multihop_answer \n", prompt)
     # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
     response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
