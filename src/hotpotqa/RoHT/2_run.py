@@ -55,11 +55,11 @@ def solve(tree):
         raise e
 
 
-trees = json.load(open("trees-testset-1.json", "r"))
+trees = json.load(open("trees.json", "r"))
 print("Total: %d | Start Processing..."%len(trees))
 parallel_process_data(trees, solve, PROC_NUM)
 
 
 print("END")
 os.makedirs("results", exist_ok=True)
-json.dump(trees, open("results/test-testset-1.json", "w"), indent=2)
+json.dump(trees, open("results/test.json", "w"), indent=2)

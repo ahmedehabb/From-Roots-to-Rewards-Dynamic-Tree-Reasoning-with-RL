@@ -1,7 +1,7 @@
 import json
 import re
 
-raw_data = json.load(open('question_decompositions-testset-1.json'))
+raw_data = json.load(open('question_decompositions.json'))
 print(len(raw_data.keys()))
 
 def check(question):
@@ -56,6 +56,6 @@ for father in tree:
             else:
                 print('haha')
 
-json.dump(question_decompositions, open('tree-testset-1.json', 'w'), indent = 2)
+json.dump(question_decompositions, open('tree.json', 'w'), indent = 2)
 
 print(len(tree))

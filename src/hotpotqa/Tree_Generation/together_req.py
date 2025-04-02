@@ -3,7 +3,7 @@ import requests
 import time
 import os
 import json, jsonlines
-from hotpotqa.Tree_Generation.provider_req import ProviderReq
+from provider_req import ProviderReq
 
 class TogetherReq(ProviderReq):
     # meta-llama/Llama-Vision-Free is free but doesnt support log_probs which are necessary for probtree
@@ -12,7 +12,8 @@ class TogetherReq(ProviderReq):
     # meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo ? very nice but no log_prob !! 
     # meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo ? niceeee and log probs !! :) 
     # meta-llama/Meta-Llama-3-70B-Instruct-Lite ?
-    def __init__(self, cache_path="./cache.jsonl", model="meta-llama/Meta-Llama-3-70B-Instruct-Lite"):
+    # meta-llama/Llama-3.3-70B-Instruct-Turbo-Free 
+    def __init__(self, cache_path="./cache.jsonl", model="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"):
         super().__init__(url="http://127.0.0.1:10001/api/together/completion", cache_path=cache_path, model=model)
 
     def make_request(self, prompt, model, temperature, max_tokens, stop, logprobs):

@@ -1,6 +1,6 @@
 import json
 import re
-from openai_req import OpenaiReq
+# from openai_req import OpenaiReq
 from together_req import TogetherReq
 import random
 from tqdm import tqdm

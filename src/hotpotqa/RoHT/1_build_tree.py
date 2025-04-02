@@ -1,10 +1,10 @@
 import json
 from collections import defaultdict
 
-raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_test_random_500.jsonl')]
-# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_dev_random_100.jsonl')]
-q2sub_q = json.load(open("../Tree_Generation/tree-testset-1.json"))
-q2dq = json.load(open("../Tree_Generation/question_decompositions-testset-1.json"))
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_test_random_500.jsonl')]
+raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_dev_random_100.jsonl')]
+q2sub_q = json.load(open("../Tree_Generation/tree.json"))
+q2dq = json.load(open("../Tree_Generation/question_decompositions.json"))
 trees = []
 
 def dfs(q, tree):
@@ -40,7 +40,7 @@ for item in raw_data:
         continue
     trees.append(tree)
 
-json.dump(trees, open("trees-testset-1.json", "w"), indent=2)
+json.dump(trees, open("trees.json", "w"), indent=2)
     
 
     
