@@ -8,3 +8,4 @@ pyvenv.cfg
 *.env
 *.DS_Store
 *.pyc
+*.pth
