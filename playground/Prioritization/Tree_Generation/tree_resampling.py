@@ -10,15 +10,16 @@ class TreeResamplingPipeline:
     Handles the complete process: Prompt generation -> Tree generation -> Post-processing -> Father-child processing -> DFS tree construction.
     """
     
-    def __init__(self):
+    def __init__(self, verbose=False):
         """
         Initialize the pipeline components.
         """
+        self.verbose = verbose
         self.prompt_generator = PromptGenerator()
-        self.prompt_to_tree = PromptToTree()
-        self.post_processor = PostProcessor()
-        self.father_child_processor = TreeFatherChildrenProcessor()
-        self.dfs_processor = TreeDFSProcessor()
+        self.prompt_to_tree = PromptToTree(verbose=verbose)
+        self.post_processor = PostProcessor(verbose=verbose)
+        self.father_child_processor = TreeFatherChildrenProcessor(verbose=verbose)
+        self.dfs_processor = TreeDFSProcessor(verbose=verbose)
 
     def resample_tree(self, question):
         """

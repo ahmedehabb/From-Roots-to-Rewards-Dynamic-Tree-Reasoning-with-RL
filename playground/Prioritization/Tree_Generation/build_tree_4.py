@@ -53,7 +53,7 @@ class TreeDFSProcessor:
     The tree structure uses `father`-to-`sons` relationships to construct a directed graph.
     """
 
-    def __init__(self, output_dir="resampled_trees", output_file="dfs_trees.json"):
+    def __init__(self, output_dir="resampled_trees", output_file="dfs_trees.json", verbose=False):
         """
         Initializes the TreeDFSProcessor class.
 
@@ -62,10 +62,13 @@ class TreeDFSProcessor:
         """
         self.script_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the script
         self.output_dir = os.path.join(self.script_dir, output_dir)  # Directory for outputs
+        self.verbose = verbose  # Verbosity flag
+
         # Ensure the output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
         self.output_file = os.path.join(self.output_dir, output_file)  # Full path to the output file
-        print(colored(f"Output directory: {self.output_dir}", "green"))
+        if self.verbose:
+            print(colored(f"Output directory: {self.output_dir}", "green"))
 
     def dfs(self, q, tree, q2sub_q, visited):
         """
@@ -81,7 +84,8 @@ class TreeDFSProcessor:
             int: The index of the current node in the tree.
         """
         if q in visited:
-            print(colored(f"Cycle detected at question: {q}", "red"))
+            if self.verbose:
+                print(colored(f"Cycle detected at question: {q}", "red"))
             return None  # Prevent infinite recursion in case of cycles
         
         visited.add(q)  # Mark the question as visited
@@ -131,11 +135,13 @@ class TreeDFSProcessor:
 
         # Ensure the question exists in the q2sub_q structure
         if question not in q2sub_q:
-            print(colored(f"Question not found in sub-question tree: {question}", "red"))
+            if self.verbose:
+                print(colored(f"Question not found in sub-question tree: {question}", "red"))
             return []
 
         # Construct the tree using DFS
-        print(colored(f"Processing question: {question}", "green"))
+        if self.verbose:
+            print(colored(f"Processing question: {question}", "green"))
         tree = []
         visited = set()  # Track visited nodes to prevent cycles
         try:
@@ -146,7 +152,8 @@ class TreeDFSProcessor:
 
         # Save the constructed tree to a file
         self.save_tree(tree)
-        print(colored(f"Final tree constructed for question '{question}'", "green"))
+        if self.verbose:
+            print(colored(f"Final tree constructed for question '{question}'", "green"))
         
         # Return the constructed tree
         return tree
@@ -172,5 +179,6 @@ class TreeDFSProcessor:
         # Write the updated data back to the file
         with open(self.output_file, "w", encoding="utf-8") as outfile:
             json.dump(existing_trees, outfile, indent=2, ensure_ascii=False)
-        print(colored(f"Tree saved to '{self.output_file}'.", "cyan"))
+        if self.verbose:
+            print(colored(f"Tree saved to '{self.output_file}'.", "cyan"))
 

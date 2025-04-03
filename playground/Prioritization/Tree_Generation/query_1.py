@@ -91,10 +91,9 @@ from Tree_Generation.together_req import TogetherReq
 # from openai_req import OpenaiReq
 
 load_dotenv()
-TEMPERATURE = 0.7
 
 class PromptToTree:
-    def __init__(self, output_dir='resampled_trees', output_file='query1_results.json'):
+    def __init__(self, output_dir='resampled_trees', output_file='query1_results.json', temperature=0.7, verbose=False):
         """
         Initializes the Prompt Processor for handling prompt-based requests.
         
@@ -105,12 +104,16 @@ class PromptToTree:
         self.script_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the script
         self.output_dir = os.path.join(self.script_dir, output_dir)  # Directory for outputs
         self.output_file = os.path.join(self.output_dir, output_file)  # Full path to the output file
+        self.temperature = temperature  # Temperature for the API request
+        self.verbose = verbose  # Verbosity flag
+
         # Ensure the output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
-        print(colored(f"Output directory: {self.output_dir}", "green"))
+        if verbose:
+            print(colored(f"Output directory: {self.output_dir}", "green"))
 
         # Initialize the request handler (use TogetherReq or OpenaiReq)
-        self.reqor = TogetherReq(cache_path=f"./cache_{TEMPERATURE}.jsonl")
+        self.reqor = TogetherReq(cache_path=f"./cache_{self.temperature}.jsonl")
 
     def process_single_prompt(self, prompt: int):
         """
@@ -122,8 +125,9 @@ class PromptToTree:
 
         try:
             # Query API and fetch the result
-            print(f"Processing prompt: {prompt[:50]}...")
-            result, tag = self.reqor.req2provider(prompt, max_tokens=None, stop=None)
+            if self.verbose:
+                print(f"Processing prompt: {prompt[:50]}...")
+            result, tag = self.reqor.req2provider(prompt, max_tokens=None, stop=None, temperature=self.temperature)
 
             # Prepare the output dictionary
             output_entry = {
@@ -133,8 +137,8 @@ class PromptToTree:
 
             # Append the result to the output file
             self.save_result(output_entry)
-
-            print(colored(f"Successfully processed prompt!", "green"))
+            if self.verbose:
+                print(colored(f"Successfully processed prompt!", "green"))
             return output_entry
 
         except Exception as e:
@@ -149,5 +153,7 @@ class PromptToTree:
         """
         with open(self.output_file, 'a', encoding='utf-8') as outfile:
             outfile.write(json.dumps(output_entry, ensure_ascii=False) + "\n")
-        print(colored(f"Result saved to: {self.output_file}", "cyan"))
+        
+        if self.verbose:
+            print(colored(f"Result saved to: {self.output_file}", "cyan"))
 

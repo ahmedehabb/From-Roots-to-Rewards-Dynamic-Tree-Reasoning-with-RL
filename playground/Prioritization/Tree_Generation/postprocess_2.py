@@ -122,16 +122,18 @@ from tqdm import tqdm
 import os
 
 class PostProcessor:
-    def __init__(self, output_dir='resampled_trees', output_file='single_question_decomposition.json'):
+    def __init__(self, output_dir='resampled_trees', output_file='single_question_decomposition.json', verbose=False):
         """
         Initialize the SingleOutputProcessor class for processing a single result.
         """
         self.script_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the script
         self.output_dir = os.path.join(self.script_dir, output_dir)  # Directory for outputs
         self.output_file = os.path.join(self.output_dir, output_file)  # Full path to the output file
+        self.verbose = verbose  # Verbosity flag
         # Ensure the output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
-        print(colored(f"Output directory: {self.output_dir}", "green"))
+        if self.verbose:
+            print(colored(f"Output directory: {self.output_dir}", "green"))
         pass
 
     def process_item(self, item):
@@ -146,7 +148,8 @@ class PostProcessor:
         """
         prompt = item['prompt']
         question = prompt.split('\n')[-2][len('Q: '):].strip()  # Extract question
-        print(colored(f"Processing question: {question}", 'red'))
+        if self.verbose:
+            print(colored(f"Processing question: {question}", 'red'))
 
         try:
             # Handle the model's response structure (Together API's `message['content']`)
@@ -177,7 +180,8 @@ class PostProcessor:
         # Process each sub-question and decomposition
         for sub_question, qd in hqdt.items():
             if not qd:  # Skip empty decompositions
-                print(colored("Got a sub-question with no decomposition!", "yellow"))
+                if self.verbose:
+                    print(colored("Got a sub-question with no decomposition!", "yellow"))
                 continue
 
             # Locate decomposition tokens in the log probabilities
@@ -204,8 +208,9 @@ class PostProcessor:
                 qd, qd_score = [], None  # Skip such cases
 
             qds_processed[sub_question] = (qd, qd_score)  # Save processed decomposition and score
-            print(colored(sub_question, 'blue'))
-            print("Decomposition tokens:", "".join(tokens[st:ed + 1]))
+            if self.verbose:
+                print(colored(sub_question, 'blue'))
+                print("Decomposition tokens:", "".join(tokens[st:ed + 1]))
 
         # Save the processed results to a file
         final_data = {
@@ -233,11 +238,13 @@ class PostProcessor:
         # Merge the new data with the existing data
         for key, value in final_data.items():
             if key in existing_data:
-                print(colored(f"Warning: Overwriting existing question: {key}", "red"))
+                if self.verbose:
+                    print(colored(f"Warning: Overwriting existing question: {key}", "red"))
             existing_data[key] = value  # Update or add new entries
 
         # Write the merged data back to the JSON file
         with open(self.output_file, 'w', encoding='utf-8') as outfile:
             json.dump(existing_data, outfile, indent=2, ensure_ascii=False)
-        print(colored(f"Saved processed question to {self.output_file}.", "cyan"))
+        if self.verbose:        
+            print(colored(f"Saved processed question to {self.output_file}.", "cyan"))
 

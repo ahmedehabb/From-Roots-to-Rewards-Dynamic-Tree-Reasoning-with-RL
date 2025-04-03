@@ -66,7 +66,7 @@ import os
 from termcolor import colored
 
 class TreeFatherChildrenProcessor:
-    def __init__(self, output_dir="resampled_trees", output_file="tree-father-children.json"):
+    def __init__(self, output_dir="resampled_trees", output_file="tree-father-children.json", verbose=True):
         """
         Initializes the TreeFatherChildrenProcessor, which processes all father-child trees
         and generates processed subtrees and subquestion decompositions.
@@ -78,10 +78,12 @@ class TreeFatherChildrenProcessor:
         self.script_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of this script
         self.output_dir = os.path.join(self.script_dir, output_dir)  # Output directory for trees
         self.output_file = os.path.join(self.output_dir, output_file)  # Save final output file
+        self.verbose = verbose  # Verbose mode for detailed output
         
         # Ensure the output directory exists
         os.makedirs(self.output_dir, exist_ok=True)
-        print(colored(f"Output directory: {self.output_dir}", "green"))
+        if self.verbose:
+            print(colored(f"Output directory: {self.output_dir}", "green"))
 
     @staticmethod
     def check(question):
@@ -114,11 +116,13 @@ class TreeFatherChildrenProcessor:
             dict: A processed tree where invalid questions are removed, and subquestions are validated.
         """
         tree = {}
-        print(colored(f"Processing {len(raw_data)} father questions...", "blue"))
+        if self.verbose:
+            print(colored(f"Processing {len(raw_data)} father questions...", "blue"))
         for father in raw_data:
             qds = raw_data[father]  # Get the tree (questions and decompositions) for this father
             if self.check(father):  # Skip invalid father questions
-                print(colored(f"Skipped invalid father: {father}", "yellow"))
+                if self.verbose:
+                    print(colored(f"Skipped invalid father: {father}", "yellow"))
                 continue
 
             if qds is None:  # If no decompositions exist for this father
@@ -126,21 +130,25 @@ class TreeFatherChildrenProcessor:
 
             # Initialize the tree structure for this father
             tree[father] = {}
-            print(colored(f"Processing father question: {father}", "green"))
+            if self.verbose:
+                print(colored(f"Processing father question: {father}", "green"))
 
             for question in qds:
                 if self.check(question):  # Skip invalid subquestions
-                    print(colored(f"Skipped invalid subquestion: {question}", "yellow"))
+                    if self.verbose:
+                        print(colored(f"Skipped invalid subquestion: {question}", "yellow"))
                     continue
 
                 # Handle circular decompositions (sub-question matching itself)
                 if any([x == question for x in qds[question][0]]):
-                    print(colored(f"Detected circular decomposition in: {question}", "magenta"))
+                    if self.verbose:
+                        print(colored(f"Detected circular decomposition in: {question}", "magenta"))
                     tree[father][question] = [[], None]
                 else:
                     tree[father][question] = qds[question]
 
-        print(colored(f"Processed tree with {len(tree.keys())} valid father questions.", "green"))
+        if self.verbose:
+            print(colored(f"Processed tree with {len(tree.keys())} valid father questions.", "green"))
         return tree
 
     def construct_question_decompositions(self, processed_tree):
@@ -154,7 +162,8 @@ class TreeFatherChildrenProcessor:
             dict: A global dictionary of questions and their decompositions.
         """
         question_decompositions = {}
-        print(colored(f"Building question decompositions from processed tree...", "blue"))
+        if self.verbose:
+            print(colored(f"Building question decompositions from processed tree...", "blue"))
 
         for father, qds in processed_tree.items():
             for question in qds:
@@ -163,13 +172,16 @@ class TreeFatherChildrenProcessor:
                     question_decompositions[question] = qds[question]
                 else:
                     if question_decompositions[question] != qds[question]:  # Check consistency
-                        print(colored(f"Inconsistent decomposition for question: {question}", "red"))
-                        print(colored(f"Existing: {question_decompositions[question]}", "red"))
-                        print(colored(f"New: {qds[question]}", "red"))
+                        if self.verbose:
+                            print(colored(f"Inconsistent decomposition for question: {question}", "red"))
+                            print(colored(f"Existing: {question_decompositions[question]}", "red"))
+                            print(colored(f"New: {qds[question]}", "red"))
                     else:
-                        print(colored(f"Duplicate (consistent) decomposition found for: {question}", "cyan"))
+                        if self.verbose:
+                            print(colored(f"Duplicate (consistent) decomposition found for: {question}", "cyan"))
 
-        print(colored(f"Constructed {len(question_decompositions.keys())} unique question decompositions.", "green"))
+        if self.verbose:
+            print(colored(f"Constructed {len(question_decompositions.keys())} unique question decompositions.", "green"))
         return question_decompositions
 
     def save_tree(self, tree, question_decompositions):
@@ -191,13 +203,15 @@ class TreeFatherChildrenProcessor:
         # Merge the new question decompositions with the existing data
         for question, decomposition in question_decompositions.items():
             if question in existing_data:
-                print(colored(f"Warning: Overwriting existing decomposition for question: {question}", "red"))
+                if self.verbose:
+                    print(colored(f"Warning: Overwriting existing decomposition for question: {question}", "red"))
             existing_data[question] = decomposition  # Update or add the new decompositions
 
         # Write the updated data back to the file
         with open(self.output_file, "w", encoding="utf-8") as outfile:
             json.dump(existing_data, outfile, indent=2, ensure_ascii=False)
-        print(colored(f"Saved updated question decompositions to '{self.output_file}'.", "cyan"))
+        if self.verbose:
+            print(colored(f"Saved updated question decompositions to '{self.output_file}'.", "cyan"))
 
 
     def run(self, raw_data):
