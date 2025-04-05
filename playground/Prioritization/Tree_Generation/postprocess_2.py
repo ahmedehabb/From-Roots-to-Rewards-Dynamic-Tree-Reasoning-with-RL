@@ -120,6 +120,7 @@ import json
 from termcolor import colored
 from tqdm import tqdm
 import os
+import re
 
 class PostProcessor:
     def __init__(self, output_dir='resampled_trees', output_file='single_question_decomposition.json', verbose=False):
@@ -135,6 +136,35 @@ class PostProcessor:
         if self.verbose:
             print(colored(f"Output directory: {self.output_dir}", "green"))
         pass
+    
+    def fix_unescaped_quotes_in_keys(self, json_string):
+        """
+        Fix unescaped quotes in JSON keys.
+        This function specifically looks for keys between {" and ":, 
+        and ensures all quotes are properly escaped.
+
+        Args:
+            json_string (str): A raw JSON string with potential unescaped quotes in keys.
+
+        Returns:
+            str: A fixed JSON string with properly escaped quotes in keys.
+        """
+
+        # Regex to match problematic keys: anything between {" and ":
+        def replace_unescaped_key_quotes(match):
+            # Extract the key from the regex match
+            key = match.group(1)
+
+            # Replace unescaped `"` inside the key with `\"`
+            fixed_key = re.sub(r'(?<!\\)"', r'\\"', key)  # Only escape quotes not already escaped
+
+            # Return the reconstructed key-value pair
+            return f'{{"{fixed_key}":'
+
+        # Apply the regex to find and fix keys
+        fixed_json = re.sub(r'\{"(.*?)":', replace_unescaped_key_quotes, json_string)
+
+        return fixed_json
 
     def process_item(self, item):
         """
@@ -156,6 +186,9 @@ class PostProcessor:
             qds = item['response']['message']['content'].strip()
             if qds.endswith('.'):
                 qds = qds[:-1]
+            # Fix unescaped quotes in keys
+            qds = self.fix_unescaped_quotes_in_keys(qds)
+            # Parse the JSON structure
             hqdt = json.loads(qds)  # Parse the hierarchical decomposition tree (JSON structure)
         except Exception as e:
             print(colored(f"Error parsing response: {e}", "red"))
