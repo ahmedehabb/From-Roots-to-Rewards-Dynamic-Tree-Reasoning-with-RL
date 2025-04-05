@@ -46,8 +46,10 @@ class ProviderReq:
             return ['error'], False
 
         # Cache the result if temperature is 0
-        if temperature == 0:
-            self.cache_result(input, response)
+        # if temperature == 0:
+        # now we cache the result even if temperature is not 0, but in different path {cache_TEMP}, but thats different from using cache
+        # since here we return from cache only if temperature is 0
+        self.cache_result(input, response)
 
         return response, True
 

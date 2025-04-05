@@ -14,6 +14,8 @@ os.environ["SERP_API_KEY"] = serp_api_key
 
 
 # openai_caller = OpenaiReq("./cache.jsonl")
+# TEMPERATURE = 0.7
+# togetherai_caller = TogetherReq(cache_path=f"./cache_{TEMPERATURE}.jsonl")
 togetherai_caller = TogetherReq()
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
@@ -74,8 +76,8 @@ def get_cb_answer(question):
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])
     prompt = instruction + '\nQ: ' + question + '\nA:'
     # print("get_cb_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop= None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n', use_cache=True, temperature=TEMPERATURE)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop= None, use_cache=True) #, temperature=TEMPERATURE)
 
     return postprocess(response)
 
@@ -112,8 +114,8 @@ def get_singlehop_ob_answer(question, topic_entities):
     
     # print("single hop prompt", prompt)
 
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True, temperature=TEMPERATURE)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True) #, temperature=TEMPERATURE)
 
     # print("get_singlehop_ob_answer \n", response)
     return postprocess(response)
@@ -171,8 +173,8 @@ def get_multihop_ob_answer(node, tree):
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
     # print("get_multihop_ob_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True, temperature=TEMPERATURE)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True) #, temperature=TEMPERATURE)
 
     return postprocess(response)
 
@@ -199,16 +201,18 @@ def aggregate_multihop_answer(node, tree):
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
 
     # print("aggregate_multihop_answer \n", prompt)
-    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True)
-    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True)
+    # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop='\n\n\n', use_cache=True, temperature=TEMPERATURE)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=512, stop=None, use_cache=True) #, temperature=TEMPERATURE)
     child_answer, cot_process_logprob, child_cot, child_token_logprobs = postprocess(response)
-    
     child_ans = child_answer
     # TODO:: V.I Need to make sure log probs we got from children are != -100, since otherwise we will get bad results as -75, -50, -25 based on length ... 
     child_score = calculate_score2(cot_process_logprob, qd_score, sub_answer_scores)
     res1 = (child_ans, child_score, child_cot, child_token_logprobs)
-    cb_ans, cb_score, cb_cot, cb_token_logprobs = node["cb_answer"]
-    ob_ans, ob_score, ob_cot, ob_token_logprobs = node["ob_answer"]
+    # cb_ans, cb_score, cb_cot, cb_token_logprobs = node["cb_answer"]
+    # ob_ans, ob_score, ob_cot, ob_token_logprobs = node["ob_answer"]
+    # now we need to recompute them because they are not available by default
+    cb_ans, cb_score, cb_cot, cb_token_logprobs = get_cb_answer(question)
+    ob_ans, ob_score, ob_cot, ob_token_logprobs = get_singlehop_ob_answer(question, [])
     if "ERROR" in cb_ans or 'Unknown' in cb_ans:
         cb_ans, cb_score = "", -100
     if "ERROR" in ob_ans or 'Unknown' in ob_ans:
