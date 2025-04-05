@@ -17,6 +17,7 @@ STEP = 4
 
 key_pool = os.getenv('TOGETHER_API_KEY').split(',')
 NUM_WORKERS = len(key_pool)  # Match the number of workers to the number of clients
+RETRY_LIMIT = 3
 
 def query(rank, prompts):
     print('Process rank {} PID {} begin...'.format(rank, os.getpid()))
@@ -35,11 +36,27 @@ def query(rank, prompts):
                 break
             gpt_results = []
             for prompt in inputs:
+                success = False
+                retries = 0
                 # Passing max_tokens with None to prevent truncation of the prompt
                 # stop = '\n\n' this stop is actually so bad sometimes !! i changed it to none
                 # bec he might start the answer with "Here is the hierarchical question decomposition tree (HQDT) in JSON format for the given question: \n\n" and complete the json tree after
-                result, tag = reqor.req2provider(prompt, max_tokens = None, stop = None)
-                gpt_results.append(result[0])
+                # result, tag = reqor.req2provider(prompt, max_tokens = None, stop = None)
+                # gpt_results.append(result[0])
+                while not success and retries < RETRY_LIMIT:
+                    try:
+                        # Attempt to call the LLM
+                        result, tag = reqor.req2provider(prompt, max_tokens=None, stop=None)
+                        gpt_results.append(result[0])
+                        success = True
+                    except Exception as e:
+                        retries += 1
+                        print(
+                            f"Error encountered for prompt (rank {rank}, idx {idx}). Retrying ({retries}/{RETRY_LIMIT}).\nError: {e}"
+                        )
+                        if retries == RETRY_LIMIT:
+                            print(f"Failed to process prompt after {RETRY_LIMIT} retries: {prompt}")
+                            gpt_results.append({"error": f"Failed after {RETRY_LIMIT} retries", "prompt": prompt})
             for prompt, res in zip(inputs, gpt_results):
                 # print(res)
                 fout.write(json.dumps({'prompt': prompt, 'response': res}, ensure_ascii = False) + '\n')

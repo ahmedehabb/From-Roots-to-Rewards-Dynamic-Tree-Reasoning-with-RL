@@ -30,6 +30,7 @@ for item in raw_data:
     try:
         question = list(q2dq[question].keys())[0]
     except:
+        print("No decomposition for question: ", question)
         continue
     assert question in q2sub_q, question
     tree = []
@@ -37,6 +38,7 @@ for item in raw_data:
     try:
         dfs(question, tree)
     except:
+        print("Cyclic problem for question: ", question)
         continue
     trees.append(tree)
 
