@@ -24,6 +24,9 @@ import concurrent.futures, random, time
 #     print("end") 
 
 def parallel_process_data(data, handle_item, workers=20, callback=None):
+    successful = []
+    failed = []
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(handle_item, item): item for item in data}
 
@@ -31,7 +34,12 @@ def parallel_process_data(data, handle_item, workers=20, callback=None):
             item = futures[future]
             try:
                 future.result()  # Get result or raise exception
+                successful.append(item)
                 if callback:
                     callback(item)
             except Exception as e:
                 print(f"Task {item} raised an exception: {e}")
+                failed.append(item)
+
+    # print(f"Successful tasks: {successful}")
+    print(f"Failed tasks: {[[node.get('question_text', 'N/A') for node in tree] if isinstance(tree, list) else 'Invalid structure' for tree in failed]}")
