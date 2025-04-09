@@ -9,7 +9,8 @@ q2a = {}
 id2type = {}
 for item in json.load(open("../../../data/2wiki/dev.json")):
     id2type[item["_id"]] = item["type"]
-raw_data = [json.loads(line.strip()) for line in open('../../../released_data/2wikimultihopqa__v2_test_random_500.jsonl')]
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/2wikimultihopqa__v2_test_random_500.jsonl')]
+raw_data = [json.loads(line.strip()) for line in open('../../../released_data/2wikimultihopqa__v2_dev_random_100.jsonl')]
 q2gold = {}
 for item in raw_data:
     try:

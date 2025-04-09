@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import requests
-from Tree_Generation.openai_req import OpenaiReq
+# from Tree_Generation.openai_req import OpenaiReq
 from Tree_Generation.together_req import TogetherReq
 
 # openai_caller = OpenaiReq("./cache.jsonl")
@@ -25,43 +25,46 @@ def bm25_search(question, k):
             print(e)
 
 def postprocess(response):
-    response = response[0]
-    # response['finish_reason'] was eos ? why is that considered wrong and will output prompt too long ? shitty code 
-    # if response == 'too long' or response['finish_reason'] != 'stop':
-    #     return 'ERROR: prompt too long', -100, ""
-    tokens = response['logprobs']['tokens']
-    token_logprobs = response['logprobs']['token_logprobs']
-    # added this here to be same as other api, better fix it form the source where we expect the response and before returning it back !! 
-    response['text'] = response['message']['content']
-    cot = response['text'].strip()
-    if len(token_logprobs) == 0:
-        return 'ERROR: empty output', -100, cot
-    # TODO:: Why is this commented ? this leds into some outputs with unknown but returning probabilities.
-    # if "Unknown" in cot:
-    #     return "Unknow", sum(token_logprobs) / len(token_logprobs), cot
-    pos = 0
-    for idx, token in enumerate(tokens):
-        if token.strip() == 'So' and idx + 1 <= len(tokens) and tokens[idx + 1].strip() == 'the' and idx + 2 <= len(tokens) and tokens[idx + 2].strip() == 'answer' and idx + 3 <= len(tokens) and tokens[idx + 3].strip() == 'is' and idx + 4 <= len(tokens) and tokens[idx + 4].strip() == ':':
-            pos = idx
-            break
-    if tokens[-1] == '.':
-        answer_logprobs = token_logprobs[pos+5:-1]
-        answer = cot.split('So the answer is: ')[-1][:-1]
-    else:
-        answer_logprobs = token_logprobs[pos+5:]
-        answer = cot.split('So the answer is: ')[-1]
-    cot_process = cot.split('So the answer is: ')[0].strip()
-    cot_process_logprobs = token_logprobs[:pos]
-    if len(cot_process_logprobs) == 0:
-        cot_process_logprob = -100
-    else:
-        cot_process_logprob = sum(cot_process_logprobs) / len(cot_process_logprobs)
-    return answer, cot_process_logprob, cot, token_logprobs
+    try:
+        response = response[0]
+        # response['finish_reason'] was eos ? why is that considered wrong and will output prompt too long ? shitty code 
+        # if response == 'too long' or response['finish_reason'] != 'stop':
+        #     return 'ERROR: prompt too long', -100, ""
+        tokens = response['logprobs']['tokens']
+        token_logprobs = response['logprobs']['token_logprobs']
+        # added this here to be same as other api, better fix it form the source where we expect the response and before returning it back !! 
+        response['text'] = response['message']['content']
+        cot = response['text'].strip()
+        if len(token_logprobs) == 0:
+            return 'ERROR: empty output', -100, cot
+        # TODO:: Why is this commented ? this leds into some outputs with unknown but returning probabilities.
+        # if "Unknown" in cot:
+        #     return "Unknow", sum(token_logprobs) / len(token_logprobs), cot
+        pos = 0
+        for idx, token in enumerate(tokens):
+            if token.strip() == 'So' and idx + 1 <= len(tokens) and tokens[idx + 1].strip() == 'the' and idx + 2 <= len(tokens) and tokens[idx + 2].strip() == 'answer' and idx + 3 <= len(tokens) and tokens[idx + 3].strip() == 'is' and idx + 4 <= len(tokens) and tokens[idx + 4].strip() == ':':
+                pos = idx
+                break
+        if tokens[-1] == '.':
+            answer_logprobs = token_logprobs[pos+5:-1]
+            answer = cot.split('So the answer is: ')[-1][:-1]
+        else:
+            answer_logprobs = token_logprobs[pos+5:]
+            answer = cot.split('So the answer is: ')[-1]
+        cot_process = cot.split('So the answer is: ')[0].strip()
+        cot_process_logprobs = token_logprobs[:pos]
+        if len(cot_process_logprobs) == 0:
+            cot_process_logprob = -100
+        else:
+            cot_process_logprob = sum(cot_process_logprobs) / len(cot_process_logprobs)
+        return answer, cot_process_logprob, cot, token_logprobs
+    except Exception as e:
+        return 'ERROR: Failed to calculate', -100, "", []
 
 def get_cb_answer(question):
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])
     prompt = instruction + '\nQ: ' + question + '\nA:'
-    print(prompt)
+    # print(prompt)
     # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n', use_cache=True)
     response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop= None, use_cache=True)
 
@@ -84,10 +87,10 @@ def get_singlehop_ob_answer(question, topic_entities):
     for idx, (title, text) in enumerate(contexts):
         prompt += '\n#' + str(idx + 1) + ' Wikipedia Title: ' + title + '\nText: ' + text 
     prompt += '\nQ: ' + question + '\nA:'
-    print("single hop prompt", prompt)
+    # print("single hop prompt", prompt)
     # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n\n', use_cache=True)
     response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
-    print("single hop response", response)
+    # print("single hop response", response)
     return postprocess(response)
 
 def aggregate_singlehop_answer(cb_answer, ob_answer):
@@ -159,7 +162,7 @@ def aggregate_multihop_answer(node, tree):
         sub_answer_scores.append(tree[son_idx]["answer"][1])
         context += '\n' + sub_question + ' ' + sub_answer
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
-    print(prompt)
+    # print(prompt)
     # response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop='\n\n\n', use_cache=True)
     response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
     child_answer, cot_process_logprob, child_cot, child_token_logprobs = postprocess(response)

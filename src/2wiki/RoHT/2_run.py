@@ -33,20 +33,20 @@ def solve(tree):
                         topic_entities.append(tree[ref_idx]["answer"][0])
             node["question"] = question
             node["cb_answer"] = get_cb_answer(question)
-            print('node["cb_answer"]', node["cb_answer"], "\n")
+            # print('node["cb_answer"]', node["cb_answer"], "\n")
             if len(node["sons"]) == 0:
                 node["ob_answer"] = get_singlehop_ob_answer(question, topic_entities)
-                print('node["ob_answer"]', node["ob_answer"], "\n")
+                # print('node["ob_answer"]', node["ob_answer"], "\n")
                 #print(node["ob_answer"])
                 node["answer"] = aggregate_singlehop_answer(node["cb_answer"], node["ob_answer"])
-                print('node["answer"]', node["answer"], "\n")
+                # print('node["answer"]', node["answer"], "\n")
             else:
                 node["ob_answer"] = get_multihop_ob_answer(node, tree)
-                print('node["ob_answer"]', node["ob_answer"], "\n")
+                # print('node["ob_answer"]', node["ob_answer"], "\n")
                 #print(node["ob_answer"])
                 node["child_answer"], node["answer"] = aggregate_multihop_answer(node, tree)
-                print('node["child_answer"]', node["child_answer"], "\n")
-                print('node["answer"]', node["answer"], "\n")
+                # print('node["child_answer"]', node["child_answer"], "\n")
+                # print('node["answer"]', node["answer"], "\n")
     except Exception as e:
         print("ERROR CASE", e)
         print(tree[-1])
