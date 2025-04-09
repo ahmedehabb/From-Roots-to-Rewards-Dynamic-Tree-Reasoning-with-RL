@@ -18,7 +18,7 @@ print(len(data))
 json.dump(data, open(os.path.join(base, 'predictions.json'), 'w'), indent = 2, ensure_ascii=False)
 
 raw_data = json.load(open('outputs/predictions.json'))
-
+error_questions = []
 data = {}
 for item in tqdm(raw_data):
     prompt = item['prompt']
@@ -38,6 +38,7 @@ for item in tqdm(raw_data):
     except Exception as e:
         #TODO:: some jsons are not correctly formulated, especially the large ones !! see how can we solve them ? 
         print("Got an error", e)
+        error_questions.append(question)
         hqdt = None
         continue
     
@@ -113,4 +114,5 @@ for item in tqdm(raw_data):
     data[question] = qds
 
 print(len(data))
+print("error_questions", error_questions)
 json.dump(data, open('question_decompositions.json', 'w'), indent = 2)

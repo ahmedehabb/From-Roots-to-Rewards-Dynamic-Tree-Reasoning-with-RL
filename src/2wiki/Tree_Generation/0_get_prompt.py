@@ -3,7 +3,8 @@ import re
 
 instruction = '\n'.join([_.strip() for _ in open('prompt.txt').readlines()])
 
-raw_data = jsonlines.open("../../../released_data/2wikimultihopqa__v2_test_random_500.jsonl", "r")
+# raw_data = jsonlines.open("../../../released_data/2wikimultihopqa__v2_test_random_500.jsonl", "r")
+raw_data = jsonlines.open("../../../released_data/2wikimultihopqa__v2_dev_random_100.jsonl", "r")
 
 prompts = []
 for item in raw_data:
