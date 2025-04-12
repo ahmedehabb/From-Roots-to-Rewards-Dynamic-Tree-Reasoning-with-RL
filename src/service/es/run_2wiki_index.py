@@ -25,7 +25,7 @@ core_title_filter = lambda x: core_title_matcher.match(x).group(1) if core_title
 
 class ElasticSearch:
     def __init__(self):
-        self.client = Elasticsearch("http://localhost:9200")
+        self.client = Elasticsearch(timeout=300,hosts="http://127.0.0.1:9200")
     
     def _extract_one(self, item, lazy=False):
         res = {k: item['_source'][k] for k in ['id', 'url', 'title', 'text', 'title_unescape']}

@@ -36,48 +36,50 @@ def index_chunk(chunk):
 def main(args):
     # make index
     if not args.dry:
-        es.indices.delete(index=INDEX_NAME, ignore=[400,403])
-        es.indices.create(index=INDEX_NAME, ignore=400,
-                    mappings = {"doc":{"properties": {
-                        "id": { "type": "keyword" },
-                        "url": { "type": "keyword" },
-                        "title": { "type": "text", "analyzer": "simple", "copy_to": "title_all"},
-                        "title_unescape": { "type": "text", "analyzer": "simple", "copy_to": "title_all"},
-                        "text": { "type": "text", "analyzer": "my_english_analyzer"},
-                        "anchortext": { "type": "text", "analyzer": "my_english_analyzer"},
-                        "title_bigram": { "type": "text", "analyzer": "simple_bigram_analyzer", "copy_to": "title_all_bigram"},
-                        "title_unescape_bigram": { "type": "text", "analyzer": "simple_bigram_analyzer", "copy_to": "title_all_bigram"},
-                        "text_bigram": { "type": "text", "analyzer": "bigram_analyzer"},
-                        "anchortext_bigram": { "type": "text", "analyzer": "bigram_analyzer"},
-                        "original_json": { "type": "string" },
-                        }}
-                    }, 
-                    settings = {
-                        "analysis": {
-                            "my_english_analyzer": {
-                                "type": "standard",
-                                "stopwords": "_english_",
+        if es.indices.exists(index=INDEX_NAME) and args.reindex:
+            es.indices.delete(index=INDEX_NAME, ignore=[400,403])
+        if not es.indices.exists(index=INDEX_NAME):
+            es.indices.create(index=INDEX_NAME, ignore=400,
+                        mappings = {"doc":{"properties": {
+                            "id": { "type": "keyword" },
+                            "url": { "type": "keyword" },
+                            "title": { "type": "text", "analyzer": "simple", "copy_to": "title_all"},
+                            "title_unescape": { "type": "text", "analyzer": "simple", "copy_to": "title_all"},
+                            "text": { "type": "text", "analyzer": "my_english_analyzer"},
+                            "anchortext": { "type": "text", "analyzer": "my_english_analyzer"},
+                            "title_bigram": { "type": "text", "analyzer": "simple_bigram_analyzer", "copy_to": "title_all_bigram"},
+                            "title_unescape_bigram": { "type": "text", "analyzer": "simple_bigram_analyzer", "copy_to": "title_all_bigram"},
+                            "text_bigram": { "type": "text", "analyzer": "bigram_analyzer"},
+                            "anchortext_bigram": { "type": "text", "analyzer": "bigram_analyzer"},
+                            "original_json": { "type": "string" },
+                            }}
+                        }, 
+                        settings = {
+                            "analysis": {
+                                "my_english_analyzer": {
+                                    "type": "standard",
+                                    "stopwords": "_english_",
+                                },
+                                "simple_bigram_analyzer": {
+                                    "tokenizer": "standard",
+                                    "filter": [
+                                            "lowercase", "shingle", "asciifolding"
+                                    ]
+                                },
+                                "bigram_analyzer": {
+                                    "tokenizer": "standard",
+                                    "filter": [
+                                            "lowercase", "stop", "shingle", "asciifolding"
+                                    ]
+                                }
                             },
-                            "simple_bigram_analyzer": {
-                                "tokenizer": "standard",
-                                "filter": [
-                                        "lowercase", "shingle", "asciifolding"
-                                ]
-                            },
-                            "bigram_analyzer": {
-                                "tokenizer": "standard",
-                                "filter": [
-                                        "lowercase", "stop", "shingle", "asciifolding"
-                                ]
-                            }
-                        },
-                    }
-        )
+                        }
+            )
 
 
-    train = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v0.1_train.jsonl')]
-    dev = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v0.1_dev.jsonl')]
-    test = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v0.1_test.jsonl')]
+    train = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v1.0_train.jsonl')]
+    dev = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v1.0_dev.jsonl')]
+    test = [json.loads(line.strip()) for line in open('../../../data/musique/musique_ans_v1.0_test.jsonl')]
 
     tot = 0
     wikipedia_data = []
