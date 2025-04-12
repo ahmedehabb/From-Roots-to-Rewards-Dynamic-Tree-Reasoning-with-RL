@@ -1,14 +1,16 @@
 from openai_req import OpenaiReq
 import requests
-import os
+import os, sys
 from transformers import AutoTokenizer
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from Tree_Generation.together_req import TogetherReq
 
-openai_caller = OpenaiReq()
-
+# openai_caller = OpenaiReq()
+togetherai_caller = TogetherReq()
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 
 def bm25_search(question, k):
-    web = "http://127.0.0.1:1435"
+    web = "http://localhost:1435"
     data = {
         "query": question,
         "k": k
@@ -23,37 +25,42 @@ def bm25_search(question, k):
             print(e)
 
 def postprocess(response):
-    response = response[0]
-    if response == 'too long' or response['finish_reason'] != 'stop':
-        return 'ERROR: prompt too long', -100, ""
-    tokens = response['logprobs']['tokens']
-    token_logprobs = response['logprobs']['token_logprobs']
-    cot = response['text'].strip()
-    if len(token_logprobs) == 0:
-        return 'ERROR: empty output', -100, cot
-    pos = 0
-    for idx, token in enumerate(tokens):
-        if token.strip() == 'So' and idx + 1 <= len(tokens) and tokens[idx + 1].strip() == 'the' and idx + 2 <= len(tokens) and tokens[idx + 2].strip() == 'answer' and idx + 3 <= len(tokens) and tokens[idx + 3].strip() == 'is' and idx + 4 <= len(tokens) and tokens[idx + 4].strip() == ':':
-            pos = idx
-            break
-    if tokens[-1] == '.':
-        answer_logprobs = token_logprobs[pos+5:-1]
-        answer = cot.split('So the answer is: ')[-1][:-1]
-    else:
-        answer_logprobs = token_logprobs[pos+5:]
-        answer = cot.split('So the answer is: ')[-1]
-    cot_process = cot.split('So the answer is: ')[0].strip()
-    cot_process_logprobs = token_logprobs[:pos]
-    if len(cot_process_logprobs) == 0:
-        cot_process_logprob = -100
-    else:
-        cot_process_logprob = sum(cot_process_logprobs) / len(cot_process_logprobs)
-    return answer, cot_process_logprob, cot
+    try: 
+        response = response[0]
+        if response == 'too long' or response['finish_reason'] != 'stop':
+            return 'ERROR: prompt too long', -100, ""
+        tokens = response['logprobs']['tokens']
+        token_logprobs = response['logprobs']['token_logprobs']
+        response['text'] = response['message']['content']
+        cot = response['text'].strip()
+        if len(token_logprobs) == 0:
+            return 'ERROR: empty output', -100, cot
+        pos = 0
+        for idx, token in enumerate(tokens):
+            if token.strip() == 'So' and idx + 1 <= len(tokens) and tokens[idx + 1].strip() == 'the' and idx + 2 <= len(tokens) and tokens[idx + 2].strip() == 'answer' and idx + 3 <= len(tokens) and tokens[idx + 3].strip() == 'is' and idx + 4 <= len(tokens) and tokens[idx + 4].strip() == ':':
+                pos = idx
+                break
+        if tokens[-1] == '.':
+            answer_logprobs = token_logprobs[pos+5:-1]
+            answer = cot.split('So the answer is: ')[-1][:-1]
+        else:
+            answer_logprobs = token_logprobs[pos+5:]
+            answer = cot.split('So the answer is: ')[-1]
+        cot_process = cot.split('So the answer is: ')[0].strip()
+        cot_process_logprobs = token_logprobs[:pos]
+        if len(cot_process_logprobs) == 0:
+            cot_process_logprob = -100
+        else:
+            cot_process_logprob = sum(cot_process_logprobs) / len(cot_process_logprobs)
+        return answer, cot_process_logprob, cot
+    except Exception as e:
+        return 'ERROR: Failed to calculate', -100, []
 
 def get_cb_answer(question):
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])
     prompt = instruction + '\nQ: ' + question + '\nA:'
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='Q:', use_cache=True)
+    # response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='Q:', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop= None, use_cache=True)
     return postprocess(response)
 
 def get_singlehop_ob_answer(question, topic_entities):
@@ -75,7 +82,8 @@ def get_singlehop_ob_answer(question, topic_entities):
         prompt += '\nQ: ' + question + '\nA:'
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
+    # response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
     return postprocess(response)
 
 def aggregate_singlehop_answer(cb_answer, ob_answer):
@@ -127,7 +135,8 @@ def get_multihop_ob_answer(node, tree):
         prompt += '\nQ: ' + question + '\nA: '
         if len(tokenizer(prompt).input_ids) + 256 <= 4097:
             break
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
+    # response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
     return postprocess(response)
 
 def calculate_score1(cot_process_logprob, qd_score, sub_answer_scores):
@@ -148,7 +157,8 @@ def aggregate_multihop_answer(node, tree):
         sub_answer_scores.append(tree[son_idx]["answer"][1])
         context += '\n' + sub_question + ' ' + sub_answer
     prompt = instruction + '\nContext:\n{}\n\nQuestion:\n{}\n\nAnswer:'.format(context, question)
-    response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
+    # response, tag = openai_caller.req2openai(prompt=prompt, max_tokens=256, stop='\n\n\n', use_cache=True)
+    response, tag = togetherai_caller.req2provider(prompt=prompt, max_tokens=None, stop=None, use_cache=True)
     child_answer, cot_process_logprob, child_cot = postprocess(response)
     
     child_ans = child_answer
