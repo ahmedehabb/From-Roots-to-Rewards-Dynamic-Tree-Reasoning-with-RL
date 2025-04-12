@@ -41,7 +41,7 @@ def query(rank, prompts):
                 while not success and retries < RETRY_LIMIT:
                     try:
                         # Attempt to call the LLM
-                        result, tag = reqor.req2provider(prompt, max_tokens=None, stop=None, temperature=0.6)
+                        result, tag = reqor.req2provider(prompt, max_tokens=None, stop=None)
                         gpt_results.append(result[0])
                         success = True
                     except Exception as e:
