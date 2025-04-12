@@ -1,13 +1,16 @@
 import json
+import re
 
 raw_data = json.load(open('question_decompositions.json'))
 
 def check(question):
-    if '#1' in question or '#2' in question or '#3' in question or '#4' in question:
+    # if '#1' in question or '#2' in question or '#3' in question or '#4' in question:
+    if re.search(r'<\d+>', question):
         return True
 tree = {}
 for father in raw_data:
     if check(father):
+        print(father)
         continue
     qds = raw_data[father]
     if qds is None:
@@ -21,6 +24,7 @@ for father in raw_data:
         else:
             tree[father][question] = qds[question]
 
+print(len(tree))
 question_decompositions = {}
 for father in tree:
     qds = tree[father]
