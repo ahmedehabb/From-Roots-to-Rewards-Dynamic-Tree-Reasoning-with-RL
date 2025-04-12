@@ -1,4 +1,4 @@
-Given a qeustion and a context, answer the question and explain why.
+Given a question and a context, answer the question and explain why.
 
 #
 Context:
