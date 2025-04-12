@@ -1,0 +1,3392 @@
+[
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the cast member of Real Time with the pizza man?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When does #1 start again in 2018?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When does real time with the pizza man cast member start again in 2018?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.02233420931778407
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What state is WIRR located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What city is WIRR located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where is WIRR located?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04885777069548367,
+      "fa": 7
+    },
+    {
+      "idx": 3,
+      "question_text": "What region is Richmond located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "What city is Richmond located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Where is Richmond located?",
+      "sons": [
+        3,
+        4
+      ],
+      "qd_logprob": -0.03336210751474706,
+      "fa": 7
+    },
+    {
+      "idx": 6,
+      "question_text": "What is the average winter daytime temperature in #2 in the state of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 7
+    },
+    {
+      "idx": 7,
+      "question_text": "What is the average winter daytime temperature in the region where Richmond is found, in the state where WIRR operates?",
+      "sons": [
+        2,
+        5,
+        6
+      ],
+      "qd_logprob": -0.08227199702052436
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the performer of All That Echoes?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who started out his career on adult contemporary radio along with #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who started out his career on adult contemporary radio along with the performer of All That Echoes?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0029502974564333336
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who first recognized that hydrogen was a discrete substance?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What field of work did #1 work in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What field of work did the person who first recognized that hydrogen was a discrete substance work in?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.002714468030102174
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What city is WOCA located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What part of Florida is #1 in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The city where WOCA is located is in which part of Florida?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.031620462725817144
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What body of water is the Kettle Generating Station located on?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What river is #1 a tributary of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the river that the Kettle Generating Station is located on a tributary of?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.035715730268534446
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who plays Paul in Breakfast at Tiffany's?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who is the spouse of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the spouse of the actor who plays Paul in Breakfast at Tiffany's?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0417795481810995
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What football league are the Los Angeles Rams a part of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What game system has a 3 letter abbreviation and features a game named after #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What were the advantages of the Genesis over #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What were the Genesis's advantages over the game system with a 3 letter abbreviation, featuring a game named after the football league that the Los Angeles Rams are representative of?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.037852867222112
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the Super Bowl?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What league is in charge of #1 halftime show?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What league is in charge of the Super Bowl halftime show?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.00927180658334,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the platform with a three letter abbreviation that had a video game named after #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "What were the Genesis's advantages over #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "What were the Genesis's advantages over the platform with a three letter abbreviation, that had a video game named after the league in charge of the Super Bowl halftime show?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.021383240527967112
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What agency abolished the dual system of government in Bengal?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What happened to the assets of #1 after it was removed from power?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What happened to the assets of the agency that abolished the dual system of government in bengal after it was removed from power?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.016682431421001724
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where did Snappy Tomato Pizza form?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In which county is #1 located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "In which county did Snappy Tomato Pizza form?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.027197549254140002
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the operator of Brent field?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was #1 doing in April 2010?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "The operator of Brent field announced it was in the process of doing what in April 2010?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05956090594400683
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which station aired High Feather?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who plays the Queen of England in 1890 on #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the actress who plays the Queen of England in 1890 on the station that aired High Feather?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03927392014180261
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where is Yaxing Coach headquartered?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the location of the Yaxing Coach headquarters?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.018999099706424997,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What city is considered to be a place that is popular with tourists and was the capital of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "How long was #2 the capital of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "How long had the city considered to be a place that is popular with tourists been the capital city of the location of the Yaxing Coach headquarters?",
+      "sons": [
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.05048723995301644
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who issued the Tamworth manifesto?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who was the father of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was the father of the person who issued the Tamworth manifesto?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.008742934835849446
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is in the cast of Secrets of a Windmill Girl?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who is the spouse of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the spouse of a cast member of Secrets of a Windmill Girl?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.013602678764190414
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where was Elizabeth Berg born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What city shares a border with #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What city shares a border with Elizabeth Berg's birthplace?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.010313868521696112,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "What river is by #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "Where does #2 empty into the Gulf of Mexico?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Where does the river by the city sharing a border with Elizabeth Berg's birthplace empty into the Gulf of Mexico?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.013784120927299406
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who does the voice for Smokey the Bear?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who is the spouse of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the spouse of the person who does the voice for Smokey the Bear?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0031843240178650004
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which state is known for its Mediterranean climate?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "Who went to #1 during the gold rush?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "Where did #2 work?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What city shares a border with #3?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What city shares a border with the place where the person who went to the state known for its Mediterranean climate during the gold rush worked?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.021193553257057175
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who owns the hard rock hotel in las vegas?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is the headquarters of #1 located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Where do greyhound buses leave from in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Where do greyhound buses leave from in where the headquarters is located of who owns the hard rock hotel in las vegas?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.015187319554665
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was Jujhar Singh's father?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who was the father of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was the father of Jujhar Singh's father?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0044476927207835
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where was Christopher Harris born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What body of water is near #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which is the body of water by the birthplace of Christopher Harris?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.06558174528027055
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who did the organizers want to arrest?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was the duration of the pact between Kravchuk and #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "how long lasting was the pact between Kravchuk and the person organizers wanted to arrest?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04522170831610222
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What record label released Cold Turkey?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the parent company of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the parent company of the record label releasing Cold Turkey?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.035920306236166315
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the owner and operator of most CBC TV stations?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "How many mandatory transmitters of #1 were updated before the deadline?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "How many mandatory transmitters of the owner and operator of most CBC TV stations were updated before the deadline?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.021734792773000347
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who ended the Archaemenid Empire by conquest in 330 BC?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When did #1 die?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When did the person who ended the Archaemenid Empire by conquest in 330 BC die?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0030846149232775003
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the Juicy Lucy?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which city is #1 from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which city is home to the Juicy Lucy?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.002419282414433529,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Where does the body of water by #1 meet the Ohio River?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Where does the body of water by the city home to the Juicy Lucy and the Ohio River meet?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.06623298156559591
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the director of Jack Goes Boating?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What recognition did #1 receive?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What recognition did the Jack Goes Boating director receive?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.051306408630886494
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which team does Jim Wilson play for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which league does #1 play in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which league does Jim Wilson's team play for?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.21812401322300842,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Who has the lowest batting average in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Who has the lowest batting average in the league that Jim Wilson's team plays for?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.03429141249124391
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the creator of The Blind Girl?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When did #1 die?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What date did the creator of The Blind Girl Die?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0023587611227444444
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where was Mehmet Hayri Tarhan born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What municipality is #1 the capital of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What municipality is Mehmet Hayri Tarhan's birthplace the capital of?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0009400333548280953
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What place has the most speakers?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "To what division does #1 belong?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "To what division does the place where the most speakers are found belong?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.027990924004853892
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who are Fuser and Alberto?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who did #1 meet?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who met the indigenous couple traveling to look for work?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03320623217060437,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "In what country did #1 meet the indigenous couple?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "Who was the president of #2 before the military coup?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Before the military coup was staged, who was the president of the country where Fuser and Alberto met the indigenous couple who were traveling to look for work?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.06525400762650975
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who suffered a great amount of losses battling the Roman army?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Between which years was the war with #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Between which years was the war with the person who suffered a great amount of losses battling the Roman army?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0469899512753792
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the religion that practices candidacy?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "What religion practices candidacy?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.107459067945,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Who wanted to reform and address #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Who is the person that wanted to reform and address the religion that practices candidacy?",
+      "sons": [
+        1,
+        2
+      ],
+      "qd_logprob": -0.02202055034742176,
+      "fa": 7
+    },
+    {
+      "idx": 4,
+      "question_text": "What is the religion that practices candidacy?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "What religion practices candidacy?",
+      "sons": [
+        4
+      ],
+      "qd_logprob": -0.107459067945,
+      "fa": 7
+    },
+    {
+      "idx": 6,
+      "question_text": "Where did #1 preach a sermon on Marian devotion before his death?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 7
+    },
+    {
+      "idx": 7,
+      "question_text": "Where is the district that the person who wanted to reform and address the religion that practices candidacy preach a sermon on Marian devotion before his death located?",
+      "sons": [
+        3,
+        5,
+        6
+      ],
+      "qd_logprob": -0.03641261822038768
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which team won the 1894-95 FA cup?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Which team did Arthur James play for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "When was the last time #2 beat #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "When was the last time the team that Arthur James was a member of beat the 1894-95 FA cup winner?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.06278498543653029
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What country is Sa Th\u1ea7y located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is the Zone 5 Military Museum located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What region is #1 and #2 located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the region of the country of Sa Th\u1ea7y and the territory of the Zone 5 Military Museam located?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.05105474389672206
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is Mary Boykin Chesnut?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where did #1 live?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where did Mary Boykin Chesnut live?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.010180901039977645,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the capital of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "The capital of #1 borders a city within which county?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "The capital of the state where Mary Boykin Chesnut lived borders a city within which county?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.033021861804536666
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who sings you can crash my party anytime?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who sings Home Alone Tonight with #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who sings home alone tonight with the singer of you can crash my party anytime?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.018410268523422382
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is Edwards?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which state did #1 win the primary in, outside of Georgia?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which state did Edwards win the primary in, outside of Georgia?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04442132116533809,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Who did the Huguenots in #1 buy land from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Who did the Huguenots in the state primary Edwards won outside of Georgia buy land from?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.03989676234796866
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which political assembly passed a bill giving regulators discretion to prohibit proprietary trades?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What party is the current majority in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What party is the current majority in the political assembly that passed a bill giving regulators discretion to prohibit proprietary trades?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03999113595186185,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "When did #1 gain control of the House?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "When did the party that is the current majority in the political assembly that passed a bill giving regulators discretion to prohibit proprietary trades, gain control of the House?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.01153732031172457
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who has held the intercontinental championship the most times?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where did #1 win in 2008?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where did the wrestler who has held the intercontinental championship the most times win in 2008?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.005861793965165417
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What company was BMG's partner from 2005-2007?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the only company larger than #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "Where is the headquarters of #2 located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What explorer reached #3 and when did they reach it?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What date did the explorer reach the location of the headquarters of the only company larger than BMG's partner from 2005-2007?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.029855237353791763
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which state were the performers of The Paramour Sessions formed in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is Veoh's headquarters located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What are the top five largest urban areas in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Where does #2 rank in #3?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Where does the city where Veoh's headquarters is located rank in the top five largest urban areas of the state where The Paramour Sessions' performers were formed?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.04621444873555108
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was seen addressed on a preserved edict?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who greeted #1 according to historical records?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was greeted by the Yongle Emperor and seen addressed on a preserved edict?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.060257142069147736,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "In which city did the Yongle Emperor greet #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "How many tourists visit #2 annually?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "How many tourists does visit annually the city where the Yongle Emperor greeted the one seen addressed on an preserved edict.",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.044181364375408545
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What ruler was dissolved after the Indian Rebellion of 1857?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was #1 established?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When was the ruler that was dissolved after the Indian Rebellion of 1857 established?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.010337634281365455
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where did Marcel Bich die?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the busiest airport in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the busiest airport in the city where Marcel Bich died?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.008488366346721052
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What country is S-Fone in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is the Zone 5 Military Museum located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What region of #1 is #2 located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "In what region of the country of S-Fone is the location of the administrative territorial entity of Zone 5 Military Museum located?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.05217508821828333
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which state has the most representatives in the US House of Representatives?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "Which state has the most house of representatives seat?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.06953603433614,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "In which city did a person work during the gold rush in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What city shares a border with #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What city shares a border with the city where a person worked during the gold rush in the state that has the most house of representatives seat?",
+      "sons": [
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.06955131428527635
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which town is WIZE licensed in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is Green Township located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "When did #1 become the capitol of #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "When did the town WIZE is licensed in become capitol of the state where Green Township is located?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.06582388895826533
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where does Alfred Kurella hail from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the abbreviated form of the name of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the abbreviated form of the name of the country where Alfred Kurella hails from?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.042437930702594585
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What system had a three letter abbreviation and was also the platform for Star Voyager?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What were the advantages of the Genesis over #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What were the Genesis's advantages over the system which had a three letter abbreviation and was also the platform for Star Voyager?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05415228204383167
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What topic did Eisenhower not discuss during the campaign?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What does the name of #1 stand for?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What does the name of the topic that Eisenhower didn't discuss during the campaign stand for?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.015703647048516522
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What country is Masherbrum located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "What area became India when #1 was created?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the majority religion in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the meaning of #3 in Arabic dictionary?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What is the meaning of the word that is also a majority religion in the area that became India when the country where Masherbrum is located was created in the Arabic dictionary?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.05293597372810199
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where is the headquarters of Yaxing Coach located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where was Tang Jinhua born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "How long had #2 been the capital city of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "How long had the place of birth of Tang Jinhua been the capital city of the Yaxing Coach headquarters location?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.039017183663276944
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the record label of Desde El Principio?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "What is the only group larger than #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "Where is #2 headquartered?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "When was the most recent Bicycle Friendly Community Award given to #3?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "When was the most recent Bicycle Friendly Community Award given to the city where the only group larger than the record label of Desde El Principio is headquartered?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.02554851775707761
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "To whom was the edict addressed that the Yongle emperor greeted?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where did the Yongle emperor greet #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the meaning of the name of #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the meaning of the name of the city where the Yongle emperor greeted the person to whom the edict was addressed?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.024312704155561537
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "From whom did the Somali Muslim Ajuran Empire declare independence?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 1,
+      "question_text": "Which country is Nam Khan located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the natural boundary between Thailand and #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the natural boundary between Thailand and the country where Nam Khan is found?",
+      "sons": [
+        1,
+        2
+      ],
+      "qd_logprob": -0.024217562401276368,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "How were #1 expelled from #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "How were the same people who the Somali Muslim Ajuran Empire declared independence from expelled from the natural boundary between Thailand and the country where Nam Khan is found?",
+      "sons": [
+        0,
+        3,
+        4
+      ],
+      "qd_logprob": -0.0482536643438339
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where are the Celts said to have migrated from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "At the end of which year did tribes from #1 invade the Roman empire?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "At the end of which year did tribes from the place where the Celts are said to have migrated from invade the Roman empire?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.038020817524792666
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where is it estimated that a hunter spends fifty to one hundred times that of the average ecotourist?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "Which country is it estimated that a hunter spends fifty to one hundred times that of the average ecotourist?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.046904077106506244,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the permanent representative to the United Nations of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Who is the permanent representative to the united nations of the country where it is estimated that a hunter spends fifty to one hundred times that of the average ecotourist?",
+      "sons": [
+        1,
+        2
+      ],
+      "qd_logprob": -0.024335870387511022
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What state has stations Williamsburg, Main Street and another?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What ocean is next to #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What ocean is next to the state where Williamsburg, Main Street and another station are located?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.09851232835503218,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "When did #1 start to open up?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "A line with Williamsburg, Main Street and another station are in a state that's next to an ocean. When did that ocean start to open up?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.06620164446939257
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who played the voice of John Smith in Pocahontas?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What institute did #1 attend?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What institute did the actor playing the voice of John Smith in Pocahontas attend?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.018988316262369583
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the performer of Born a Lion?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "In what city did #1 form?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Where do greyhound buses leave from in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Where do greyhound buses leave from in the city the performer of Born a Lion formed in?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.026699017341439063
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the performer of Delta Hardware?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What label is #1 signed to?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What label was responsible for the performer of Delta Hardware?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.009943096379678423
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What song is Hungry Eyes?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who sang #1 in the movie Dirty Dancing?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who is the singer of Hungry Eyes from the movie Dirty Dancing?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.1448157490773295,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "Where was #1 born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "What county shares a border with the county of #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "What county shares a border with the county where the singer of Hungry Eyes from the movie Dirty Dancing was born?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.02049593811748139
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which country is Ha Hoa located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is the Zone 5 Military Museum located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "In what region of #1 is #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "In what region of the country where Ha Hoa is located is the city where Zone 5 Military Museum is found?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.034144036443308434
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the determiner of rules of the US House and US Senate?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When did the majority party in the House of Representatives take control of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When did the majority party in the House of Representatives take control of the determiner of rules of the US House and US Senate?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.010167086598716471
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What was the period that limited the supply of shellac?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "What period limited the supply of shellac?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.024457659201919283,
+      "fa": 5
+    },
+    {
+      "idx": 2,
+      "question_text": "In the Treaty of Sch\u00f6nbrunn, what region were Bia\u0142ystok and Przemy\u015bl given to?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What region were Bia\u0142ystok and Przemy\u015bl given in the Treaty of Sch\u00f6nbrunn?",
+      "sons": [
+        2
+      ],
+      "qd_logprob": -0.03232447721734889,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "To which country were Bia\u0142ystok, Przemy\u015bl, and #2 returned after #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "After the period which limited the supply of shellac; Bia\u0142ystok, Przemy\u015bl were returned to what country along with the region they had been given in the Treaty of Sch\u00f6nbrunn?",
+      "sons": [
+        1,
+        3,
+        4
+      ],
+      "qd_logprob": -0.0736375279225317
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which network aired the show Just Men!?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What major broadcaster, along with ABC and #1, is based in New York?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What UK label was bought by #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What UK label was bought by the major broadcaster that, along with ABC and the network of the show Just Men!?, is based in New York?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.029390619217422566
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the producer of Mistress?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In The Godfather, who does #1 play?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "In The Godfather, who does the producer of Mistress play?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0033746787742014285
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the artist that sang Is She Really Going Out With Him?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "Who composed Will You Be There?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What movie is about the composer of #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Who played the man named #1 in #3?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Who played the man named identically to the the artist who sang Is She Really Going Out With Him, in the movie about the composer of Will You Be There?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.03687276981397724
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is a cast member of Doing His Bit?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What line by #1 is believed to have started the archie nickname?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What line by a cast member of Doing His Bit is believed to have started the archie nickname?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04524642637996749
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What military branch is Air Defense Artillery part of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What country is #1 from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What country is Air Defense Artillery a part of?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.022727756374217617,
+      "fa": 9
+    },
+    {
+      "idx": 3,
+      "question_text": "What country had normalization occur in it after invading another country?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "What country was invaded by #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Which country invaded Country B and had normalization occur in it?",
+      "sons": [
+        3,
+        4
+      ],
+      "qd_logprob": -0.13341434622088566,
+      "fa": 9
+    },
+    {
+      "idx": 6,
+      "question_text": "What country is Country B?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 8
+    },
+    {
+      "idx": 7,
+      "question_text": "When was the word 'Slavs' used in the national anthem of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 8
+    },
+    {
+      "idx": 8,
+      "question_text": "When was the word 'Slavs' used in the national anthem of Country B?",
+      "sons": [
+        6,
+        7
+      ],
+      "qd_logprob": -0.021651598235722692,
+      "fa": 9
+    },
+    {
+      "idx": 9,
+      "question_text": "Normalization occurred in Country A that invaded Country B because the military branch that Air Defense Artillery is part of was unprepared. when was the word 'Slavs' used in the national anthem of Country B?",
+      "sons": [
+        2,
+        5,
+        8
+      ],
+      "qd_logprob": -0.11589592979321642
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the author of The Happy Journey to Trenton and Camden?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What award did #1 receive?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What award did the author of The Happy Journey to Trenton and Camden receive?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.00069571533758625
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who has the most points in an NBA season?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who was picked before #1 in the NBA draft?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who was picked before the player who has the most points in an NBA season in the NBA draft?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.024717504778584583
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "When did the first cake mix come out?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was the percentage the Dow Jones fell in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was the percentage the Dow Jones fell during the time the first cake mix come out?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03874735531391083
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In what state is Yuma's Library District located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is Yuma's Library District located?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.06692821185258538,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the largest populated city in #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Who won the Indy Car Race in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Who won the Indy Car Race in the largest populated city of the state where Yuma's Library District is located?",
+      "sons": [
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.022390954874737877
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the singer of Is She Really Going Out With Him?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 1,
+      "question_text": "Who is the composer of Speechless?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 2,
+      "question_text": "What movie is about the composer of Speechless?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "Who played the man named #1 in #3?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "Who played the man named identically to the singer of Is She Really Going Out With Him in the movie about the composer of Speechless?",
+      "sons": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qd_logprob": -0.04533909759122447
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the USS Askari?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What branch operates #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What branch operates the USS Askari?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -6.7830086509375e-05,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "What military group is part of #1 that has SEAL?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "What does SEAL stand for in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "What does SEAL stand for in the military group that is part of the branch that operates the USS Askari?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.07482303609796576
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who won the 2011 Australian Open - Men's Doubles?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which college did #1 attend?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What college did the 2011 Australian Open - Men's Doubles winner go to?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03468424123506917
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the record label for Oh Woman, Oh Why?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What company is #1 a part of?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What company is the record label for Oh Woman, Oh Why a part of?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.011147190911410415
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was M. King Hubbert's employer?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What did #1 announce it was doing in April 2010?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What did M. King Hubbert's employer announce it was in the process of doing in April 2010?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.01732397948425963
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What state does WUSH operate in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What region contains Richmond?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the average winter daytime temperature in #2 in the state of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the average winter daytime temperature in the region containing Richmond, in the state where WUSH operates?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.04094582456911177
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What character is from The Bourne Ultimatum?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What was the story of #1 based on?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What was the story of the character from The Bourne Ultimatum based on?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.056755120449545816
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What city is Keeping Up with the Joneses set in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Which war marked the first time that the number of black people living in NYC declined?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "Who burned down #1 during #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "Who burned down the city where Keeping Up with the Joneses is set, during the war marking the first time that the number of black people living in NYC declined?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.04785086417998358
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who directed Pollack?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What gun was used by #1 in Westworld?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What gun was used by Pollack's director in Westworld?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03613096787927842
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which county is KRSU licensed to broadcast?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What county shares a border with #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the capital of #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the capital of the county that shares a border with the county where KRSU is licensed to broadcast?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.02748117898288774
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where was Lloyd Dane born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which county is #1 located in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which county does Lloyd Dane's birthplace belong to?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0032473802571929412
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which country is Phu Luong in?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In what region of #1 is the city that has the Zone 5 Military Museum located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "In what region of the country that contains Phu Luong, is the city that has the Zone 5 Military Museum located?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.06670396146648547
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What is the time period of A Rose for Emily?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 1
+    },
+    {
+      "idx": 1,
+      "question_text": "What historical period is A Rose for Emily set in?",
+      "sons": [
+        0
+      ],
+      "qd_logprob": -0.04518765663529768,
+      "fa": 7
+    },
+    {
+      "idx": 2,
+      "question_text": "What conflict occurred before the #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 7
+    },
+    {
+      "idx": 3,
+      "question_text": "Who is Dunn Dunn's recording artist?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "Where did #1 die?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Where did Dunn Dunn's recording artist die?",
+      "sons": [
+        3,
+        4
+      ],
+      "qd_logprob": -0.03136811507488,
+      "fa": 7
+    },
+    {
+      "idx": 6,
+      "question_text": "Who burned down #3 during #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 7
+    },
+    {
+      "idx": 7,
+      "question_text": "Who burned down the city where Dunn Dunn's recording artist died during the conflict after which occurred the historical period of A Rose for Emily?",
+      "sons": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "qd_logprob": -0.06244784596008213
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Which city has the most graduates?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "In which city do most university graduates stay after acquiring a degree?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which city has the most university graduates stay after acquiring a degree?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05948460098949697,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What geological event caused the foundations of the land beneath #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What geological event caused the foundations of the land beneath the city where most university graduates stay after acquiring a degree?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.01952524434931793
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who played Mary Poppins in the 1964 film?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Who does #1 play in Princess Diaries?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who does the actress that played mary poppins in the 1964 film play in princess diaries?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.0118272068113976
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was the first woman to go to space?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Which country sent #1 to space?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Which country sent the first woman to space?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.03488285201889381,
+      "fa": 5
+    },
+    {
+      "idx": 3,
+      "question_text": "Who argued that #1 had become an imperialist power?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 4,
+      "question_text": "Where did #2 declare he would intervene in the Korean conflict?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 5
+    },
+    {
+      "idx": 5,
+      "question_text": "Where did the arguer that the country to send the first woman to space had become an imperialist power declare he would intervene in the Korean conflict?",
+      "sons": [
+        2,
+        3,
+        4
+      ],
+      "qd_logprob": -0.05697353880478369
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who was the sibling of Alice de Lusignan, Countess of Surrey?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "When was #1 crowned?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "When was the sibling of Alice de Lusignan, Countess of Surrey crowned?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.010027789344429232
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who is the performer of the song Girlfriend?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What character does #1 play in The Wire?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Who does the Girlfriend performer play in The Wire?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.060480269294705444
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "In what county is Fort Deposit?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where is #1 located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "Where is Fort Deposit located?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.14412245958791436,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the capital of #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "What is the capital of the county where Fort Deposit is located?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.0019275510904876471
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "What does the phrase 'by the skin of your teeth' mean?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "Where did #1 come from?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the origin of the phrase 'by the skin of your teeth?'",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.04640178859673916,
+      "fa": 4
+    },
+    {
+      "idx": 3,
+      "question_text": "From which book is #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 4
+    },
+    {
+      "idx": 4,
+      "question_text": "From which book did the phrase 'by the skin of your teeth' originate?",
+      "sons": [
+        2,
+        3
+      ],
+      "qd_logprob": -0.014417813304145386,
+      "fa": 6
+    },
+    {
+      "idx": 5,
+      "question_text": "Who is defending the stuff from #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 6
+    },
+    {
+      "idx": 6,
+      "question_text": "Who is the guy defending this stuff from the book from which by the skin of your teeth originated?",
+      "sons": [
+        4,
+        5
+      ],
+      "qd_logprob": -0.08810116114533284
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who composed Bajazet?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "Where was #1 born?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "What is the name of the famous bridge in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "What is the name of the famous bridge in the birthplace of Bajazet's composer?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.014994210211720345
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Who won the American League East in 2017?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 1,
+      "question_text": "What event is the MLB MVP award named after?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 2,
+      "question_text": "When did #1 last meet the Dodgers in #2?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 3
+    },
+    {
+      "idx": 3,
+      "question_text": "When was the last time the winner of the American League East in 2017 met the Dodgers in the event after which the MLB MVP award is given out?",
+      "sons": [
+        0,
+        1,
+        2
+      ],
+      "qd_logprob": -0.028404023287479187
+    }
+  ],
+  [
+    {
+      "idx": 0,
+      "question_text": "Where is the headquarters of Wipac located?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 1,
+      "question_text": "What body of water is by #1?",
+      "sons": [],
+      "qd_logprob": null,
+      "fa": 2
+    },
+    {
+      "idx": 2,
+      "question_text": "What body of water is by the headquarters location of Wipac?",
+      "sons": [
+        0,
+        1
+      ],
+      "qd_logprob": -0.05431924623658501
+    }
+  ]
+]

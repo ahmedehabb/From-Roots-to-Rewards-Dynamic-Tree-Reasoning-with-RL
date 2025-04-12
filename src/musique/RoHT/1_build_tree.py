@@ -1,7 +1,8 @@
 import json
 from collections import defaultdict
 
-raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_test_random_500.jsonl')]
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_test_random_500.jsonl')]
+raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_dev_random_100.jsonl')]
 q2sub_q = json.load(open("../Tree_Generation/tree.json"))
 q2dq = json.load(open("../Tree_Generation/question_decompositions.json"))
 
@@ -26,12 +27,21 @@ def dfs(q, tree):
 
 for item in raw_data:
     question = item['question_text'].strip()
-    question = list(q2dq[question].keys())[0]
+    try:
+        question = list(q2dq[question].keys())[0]
+    except:
+        print("No decomposition for question: ", question)
+        continue
     assert question in q2sub_q, question
     tree = []
-    dfs(question, tree)
+    try:
+        dfs(question, tree)
+    except:
+        print("Cyclic problem for question: ", question)
+        continue
     trees.append(tree)
 
+print("Total trees: ", len(trees))
 json.dump(trees, open("trees.json", "w"), indent=2)
     
     
