@@ -23,18 +23,6 @@
     ],
     -0.060257142069147736
   ],
-  "In which city did the Yongle Emperor greet #1?": [
-    [
-      "Where did the Yongle Emperor greet the person mentioned in the edict?"
-    ],
-    -0.0647843798913206
-  ],
-  "How many tourists visit #2 annually?": [
-    [
-      "What is the annual number of tourists visiting the city where the Yongle Emperor greeted the person mentioned in the edict?"
-    ],
-    -0.05609098287150654
-  ],
   "What is the average winter daytime temperature in the region containing Richmond, in the state where WUSH operates?": [
     [
       "What state does WUSH operate in?",
@@ -118,18 +106,6 @@
       "In what state is Yuma's Library District located?"
     ],
     -0.06692821185258538
-  ],
-  "What is the largest populated city in #1?": [
-    [
-      "What is the largest populated city in the state where Yuma's Library District is?"
-    ],
-    -0.05132456829684421
-  ],
-  "Who won the Indy Car Race in #2?": [
-    [
-      "Who won the Indy Car Race?"
-    ],
-    -0.026039043514241113
   ],
   "Who played the man named identically to the singer of Is She Really Going Out With Him in the movie about the composer of Speechless?": [
     [
@@ -307,12 +283,6 @@
     ],
     -0.03488285201889381
   ],
-  "Who argued that #1 had become an imperialist power?": [
-    [
-      "Who argued that the country that sent the first woman to space had become an imperialist power?"
-    ],
-    -0.04629857216238857
-  ],
   "Who has the lowest batting average in the league that Jim Wilson's team plays for?": [
     [
       "Which league does Jim Wilson's team play for?",
@@ -395,13 +365,6 @@
       "In the Treaty of Sch\u00f6nbrunn, what region were Bia\u0142ystok and Przemy\u015bl given to?"
     ],
     -0.03232447721734889
-  ],
-  "To which country were Bia\u0142ystok, Przemy\u015bl, and #2 returned after #1?": [
-    [
-      "To which country were Bia\u0142ystok and Przemy\u015bl returned after #1?",
-      "To which country was #3 returned after #1?"
-    ],
-    -0.06714307179433304
   ],
   "In what region of the country where Ha Hoa is located is the city where Zone 5 Military Museum is found?": [
     [
@@ -644,12 +607,6 @@
     ],
     -0.018999099706424997
   ],
-  "What city is considered to be a place that is popular with tourists and was the capital of #1?": [
-    [
-      "What city is a popular tourist destination and was once the capital of the location of Yaxing Coach headquarters?"
-    ],
-    -0.12683159117191792
-  ],
   "When did the person who ended the Archaemenid Empire by conquest in 330 BC die?": [
     [
       "Who ended the Archaemenid Empire by conquest in 330 BC?",
@@ -672,12 +629,6 @@
     ],
     -0.04518765663529768
   ],
-  "What conflict occurred before the #1?": [
-    [
-      "What event occurred before the time period of A Rose for Emily?"
-    ],
-    -0.09820032177746935
-  ],
   "Where did Dunn Dunn's recording artist die?": [
     [
       "Who is Dunn Dunn's recording artist?",
@@ -698,13 +649,6 @@
       "In what region of #1 is the city that has the Zone 5 Military Museum located?"
     ],
     -0.06670396146648547
-  ],
-  "In what region of #1 is the city that has the Zone 5 Military Museum located?": [
-    [
-      "Which city has the Zone 5 Military Museum?",
-      "In what region of #1 is #2 located?"
-    ],
-    -0.018178845601722917
   ],
   "Where does the body of water by the city home to the Juicy Lucy and the Ohio River meet?": [
     [
@@ -800,19 +744,6 @@
     ],
     -0.03320623217060437
   ],
-  "In what country did #1 meet the indigenous couple?": [
-    [
-      "Where did Fuser and Alberto meet the indigenous couple?"
-    ],
-    -0.01804748865138769
-  ],
-  "Who was the president of #2 before the military coup?": [
-    [
-      "What country is #2?",
-      "Who was the president of #1 before the military coup?"
-    ],
-    -0.038539137221154755
-  ],
   "Between which years was the war with the person who suffered a great amount of losses battling the Roman army?": [
     [
       "Who suffered a great amount of losses battling the Roman army?",
@@ -842,14 +773,6 @@
       "What league is in charge of #1 halftime show?"
     ],
     -0.00927180658334
-  ],
-  "What is the platform with a three letter abbreviation that had a video game named after #1?": [
-    [
-      "What video game was named after #1?",
-      "What platform had #1?",
-      "What is the three letter abbreviation of #2?"
-    ],
-    -0.32222310015820277
   ],
   "What award did the author of The Happy Journey to Trenton and Camden receive?": [
     [
@@ -958,13 +881,6 @@
     ],
     -0.06953603433614
   ],
-  "In which city did a person work during the gold rush in #1?": [
-    [
-      "During the gold rush, in which state did people work?",
-      "In #1, which city did a person work during the gold rush?"
-    ],
-    -0.05980436785113566
-  ],
   "When did the town WIZE is licensed in become capitol of the state where Green Township is located?": [
     [
       "Which town is WIZE licensed in?",
@@ -1010,19 +926,6 @@
       "What branch operates #1?"
     ],
     -6.7830086509375e-05
-  ],
-  "What military group is part of #1 that has SEAL?": [
-    [
-      "What military group has SEAL?",
-      "Is #1 part of #2?"
-    ],
-    -0.002000002291312941
-  ],
-  "What does SEAL stand for in #2?": [
-    [
-      "What does SEAL stand for?"
-    ],
-    -0.103982820935
   ],
   "Who is the spouse of the person who does the voice for Smokey the Bear?": [
     [

@@ -5,7 +5,7 @@ raw_data = json.load(open('question_decompositions.json'))
 
 def check(question):
     # if '#1' in question or '#2' in question or '#3' in question or '#4' in question:
-    if re.search(r'<\d+>', question):
+    if re.search(r'#\d+', question):
         return True
 tree = {}
 for father in raw_data:
