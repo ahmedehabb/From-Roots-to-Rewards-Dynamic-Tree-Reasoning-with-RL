@@ -4487,5 +4487,739 @@
       "What is the band <1> noted for?"
     ],
     -0.024120291065739662
+  ],
+  "Who is the founder of the company which published Big Picture (Magazine)?": [
+    [
+      "Which company published Big Picture (Magazine)?",
+      "Who is the founder of <1>?"
+    ],
+    -2.839451741904762e-05
+  ],
+  "Are Antoine Jean-Baptiste Thomas and Canardo (Rapper) of the same nationality?": [
+    [
+      "What is the nationality of Antoine Jean-Baptiste Thomas?",
+      "What is the nationality of Canardo (Rapper)?"
+    ],
+    -0.0014685713519726924
+  ],
+  "When was Ludwig Gruno Of Hesse-Homburg's father born?": [
+    [
+      "Who is Ludwig Gruno Of Hesse-Homburg's father?",
+      "When was <1> born?"
+    ],
+    -0.00017043451598333333
+  ],
+  "Which film has the director died later, Begrijpt U Nu Waarom Ik Huil? or We Faw Down?": [
+    [
+      "Who is the director of Begrijpt U Nu Waarom Ik Huil?",
+      "Who is the director of We Faw Down?",
+      "When did the director of Begrijpt U Nu Waarom Ik Huil die?",
+      "When did the director of We Faw Down die?"
+    ],
+    -0.006639599795164425
+  ],
+  "Who is Viacheslav I Of Kiev's maternal grandfather?": [
+    [
+      "Who is Viacheslav I Of Kiev's mother?",
+      "Who is the father of <1>?"
+    ],
+    -0.026116132736234546
+  ],
+  "Who is the paternal grandfather of Władysław I Of Płock?": [
+    [
+      "Who is Władysław I Of Płock's father?",
+      "Who is the father of <1>?"
+    ],
+    -0.0789600086197156
+  ],
+  "Where did the director of film Ręce Do Góry study?": [
+    [
+      "Who is the director of film Ręce Do Góry?",
+      "Where did <1> study?"
+    ],
+    -0.0053707210121787495
+  ],
+  "Was Augusta, Lady Gregory or Luis Yáñez born first?": [
+    [
+      "When was Augusta, Lady Gregory born?",
+      "When was Luis Yáñez born?"
+    ],
+    -1.13248825e-06
+  ],
+  "Which country Dorothea Of Denmark, Duchess Of Mecklenburg's father is from?": [
+    [
+      "Who is Dorothea Of Denmark, Duchess Of Mecklenburg's father?",
+      "Which country is <1> from?"
+    ],
+    -2.547379244827586e-05
+  ],
+  "Who is Ermengarde Of Tuscany's paternal grandfather?": [
+    [
+      "Who is Ermengarde Of Tuscany's father?",
+      "Who is the father of <1>?"
+    ],
+    -0.0067952573332029165
+  ],
+  "Where was the performer of song Evolution (Ayumi Hamasaki Song) born?": [
+    [
+      "Who is the performer of the song Evolution (Ayumi Hamasaki Song)?",
+      "Where was <1> born?"
+    ],
+    -0.026850874600168075
+  ],
+  "Where did the director of film Walkover (Film) graduate from?": [
+    [
+      "Who is the director of film Walkover (Film)?",
+      "Where did <1> graduate from?"
+    ],
+    -0.04243052524443478
+  ],
+  "Are both Matt Stephens (Politician) and David Townsend (Musician) from the same country?": [
+    [
+      "Which country is Matt Stephens (Politician) from?",
+      "Which country is David Townsend (Musician) from?"
+    ],
+    -0.0006973266575431999
+  ],
+  "Which film has the director who was born later, Common Clay (1919 Film) or I'M From The City?": [
+    [
+      "Who is the director of Common Clay (1919 Film)?",
+      "Who is the director of I'M From The City?",
+      "Which of the directors <1> or <2> was born later?"
+    ],
+    -0.09937431668305349
+  ],
+  "Who is Rudolf Hesso, Margrave Of Baden-Baden's mother-in-law?": [
+    [
+      "Who is Rudolf Hesso, Margrave Of Baden-Baden's wife?",
+      "Who is the mother of <1>?"
+    ],
+    -0.009369073346449312
+  ],
+  "Who is the spouse of the director of film Dhaya (Film)?": [
+    [
+      "Who is the director of film Dhaya (Film)?",
+      "Who is the spouse of <1>?"
+    ],
+    -0.0023437168183913044
+  ],
+  "Where was the husband of Jana Tichá born?": [
+    [
+      "Who is the husband of Jana Tichá?",
+      "Where was <1> born?"
+    ],
+    -0.0003460884
+  ],
+  "What is the place of birth of the director of film El Cantor Del Pueblo?": [
+    [
+      "Who is the director of film El Cantor Del Pueblo?",
+      "What is the place of birth of <1>?"
+    ],
+    -0.012054480039012307
+  ],
+  "Where was the place of death of Alessandro Ruspoli, 2Nd Prince Of Cerveteri's father?": [
+    [
+      "Who is Alessandro Ruspoli, 2Nd Prince Of Cerveteri's father?",
+      "Where was the place of death of <1>?"
+    ],
+    -2.9531392061515152e-05
+  ],
+  "Who is the paternal grandfather of Matthew Spender?": [
+    [
+      "Who is Matthew Spender's father?",
+      "Who is the father of <1>?"
+    ],
+    -0.01644980907441421
+  ],
+  "Who was born later, Tsvetko Slavov or Marc Burrows?": [
+    [
+      "When was Tsvetko Slavov born?",
+      "When was Marc Burrows born?"
+    ],
+    -1.4126301e-06
+  ],
+  "Which film was released earlier, Orma Mathram or Game Of Death?": [
+    [
+      "When was Orma Mathram released?",
+      "When was Game Of Death released?"
+    ],
+    -1.3344817738333332e-05
+  ],
+  "Are Biff Schlitzer and Ryan Groy both from the same country?": [
+    [
+      "What country is Biff Schlitzer from?",
+      "What country is Ryan Groy from?"
+    ],
+    -0.028714537620514503
+  ],
+  "What is the place of birth of Teresa Gil De Vidaure's husband?": [
+    [
+      "Who is Teresa Gil De Vidaure's husband?",
+      "What is the place of birth of <1>?"
+    ],
+    -4.9009920924583335e-05
+  ],
+  "Which film came out earlier, Painted Post (Film) or Katka'S Reinette Apples?": [
+    [
+      "When was Painted Post (Film) released?",
+      "When was Katka'S Reinette Apples released?"
+    ],
+    -1.0023514651666665e-05
+  ],
+  "When did Louisa Grace Beauclerk, Duchess Of St Albans's mother die?": [
+    [
+      "Who is Louisa Grace Beauclerk, Duchess Of St Albans's mother?",
+      "When did <1> die?"
+    ],
+    -4.3529052884074076e-05
+  ],
+  "What is the place of birth of Aleksey Greig's father?": [
+    [
+      "Who is Aleksey Greig's father?",
+      "What is the place of birth of <1>?"
+    ],
+    -5.115115307608696e-05
+  ],
+  "Who is the spouse of the director of film Voices (1973 Film)?": [
+    [
+      "Who is the director of film Voices (1973 Film)?",
+      "Who is the spouse of <1>?"
+    ],
+    -0.006592169195697499
+  ],
+  "Was Shakila or Øyvind Leonhardsen born first?": [
+    [
+      "When was Shakila born?",
+      "When was Øyvind Leonhardsen born?"
+    ],
+    -2.8780528233333334e-06
+  ],
+  "Who is Gülçiçek Hatun's mother-in-law?": [
+    [
+      "Who is Gülçiçek Hatun's husband?",
+      "Who is the mother of <1>?"
+    ],
+    -0.004550283684946818
+  ],
+  "Director of film 2001: A Space Odyssey (Film) died where?": [
+    [
+      "Who is the director of the film 2001: A Space Odyssey?",
+      "Where did <1> die?"
+    ],
+    -0.10185251711960001
+  ],
+  "Where was the place of burial of Zeenat Mahal's husband?": [
+    [
+      "Who is Zeenat Mahal's husband?",
+      "Where was <1> buried?"
+    ],
+    -0.0006150543546645
+  ],
+  "Where was the director of film Trick For Trick born?": [
+    [
+      "Who is the director of the film Trick For Trick?",
+      "Where was <1> born?"
+    ],
+    -0.00408650567109
+  ],
+  "What nationality is the director of film Little Fish (Upcoming Film)?": [
+    [
+      "Who is the director of film Little Fish (Upcoming Film)?",
+      "What nationality is <1>?"
+    ],
+    -0.009185759900956521
+  ],
+  "Which film has the director who was born later, Felices 140 or Dr. Who And The Daleks?": [
+    [
+      "When was the director of Felices 140 born?",
+      "When was the director of Dr. Who And The Daleks born?"
+    ],
+    -0.013826864106327141
+  ],
+  "Where did the director of film Life Without Soul die?": [
+    [
+      "Who is the director of film Life Without Soul?",
+      "Where did <1> die?"
+    ],
+    -0.2617195546627
+  ],
+  "Which film whose director was born first, Wedding In Paris or Twists Of Fate?": [
+    [
+      "Who is the director of Wedding In Paris?",
+      "Who is the director of Twists Of Fate?",
+      "Which of the directors was born first?"
+    ],
+    -0.027742836025603228
+  ],
+  "Are Kakwa River and Bighead River located in the same country?": [
+    [
+      "In which country is the Kakwa River located?",
+      "In which country is the Bighead River located?"
+    ],
+    -0.030062473338590433
+  ],
+  "Who is the maternal grandfather of Berthold (Patriarch Of Aquileia)?": [
+    [
+      "Who is the mother of Berthold (Patriarch Of Aquileia)?",
+      "Who is the father of <1>?"
+    ],
+    -0.0011165840936996553
+  ],
+  "Which film has the director died later, God'S Will Be Done or Riding On Air?": [
+    [
+      "Who is the director of God'S Will Be Done?",
+      "Who is the director of Riding On Air?",
+      "When did the director of God'S Will Be Done die?",
+      "When did the director of Riding On Air die?"
+    ],
+    -0.00029135764252680846
+  ],
+  "Which song was released earlier, Come And See Me or Hanging On To Nothing?": [
+    [
+      "When was Come And See Me released?",
+      "When was Hanging On To Nothing released?"
+    ],
+    -0.00035537543064684214
+  ],
+  "Which country Li Lingrong's husband is from?": [
+    [
+      "Who is Li Lingrong's husband?",
+      "Which country is <1> from?"
+    ],
+    -1.995187030526316e-06
+  ],
+  "Where did Temüge's father die?": [
+    [
+      "Who is Temüge's father?",
+      "Where did <1> die?"
+    ],
+    -2.4265713333333332e-05
+  ],
+  "Who is Elizabeth Stuart, Countess Of Lennox's mother-in-law?": [
+    [
+      "Who is Elizabeth Stuart, Countess Of Lennox's husband?",
+      "Who is the mother of <1>?"
+    ],
+    -0.012085109761612083
+  ],
+  "Which song was released more recently, Come With Me (Pure Imagination) or Hold On Me (Grinspoon Song)?": [
+    [
+      "When was Come With Me (Pure Imagination) released?",
+      "When was Hold On Me (Grinspoon Song) released?"
+    ],
+    -4.329851760357143e-06
+  ],
+  "Who was born first, Heo Keon or Ljiljana Nanušević?": [
+    [
+      "When was Heo Keon born?",
+      "When was Ljiljana Nanušević born?"
+    ],
+    -1.5397866666666666e-06
+  ],
+  "Which film was released more recently, The Black Duke or Avalalpam Vaikippoyi?": [
+    [
+      "When was The Black Duke released?",
+      "When was Avalalpam Vaikippoyi released?"
+    ],
+    -9.350154690000001e-06
+  ],
+  "Which film has the director who is older, King Of The Zombies or Mon Oncle Benjamin?": [
+    [
+      "Who is the director of King Of The Zombies?",
+      "Who is the director of Mon Oncle Benjamin?",
+      "Which of <1> and <2> is older?"
+    ],
+    -0.009769681443901388
+  ],
+  "Which film has the director who was born first, Dead Man'S Evidence or Creature Of The Walking Dead?": [
+    [
+      "Who is the director of Dead Man'S Evidence?",
+      "Who is the director of Creature Of The Walking Dead?",
+      "Who was born first, <1> or <2>?"
+    ],
+    -0.008461729900497567
+  ],
+  "Which band was formed earlier, The Flower Pot Men or Los Chalchaleros?": [
+    [
+      "When was The Flower Pot Men formed?",
+      "When was Los Chalchaleros formed?"
+    ],
+    -1.6504525564499998e-05
+  ],
+  "Where did the composer of song Ram Chahe Leela graduate from?": [
+    [
+      "Who is the composer of song Ram Chahe Leela?",
+      "Where did <1> graduate from?"
+    ],
+    -0.0020858256794726087
+  ],
+  "Which film whose director is younger, Aach... Aku Jatuh Cinta or Ferragosto In Bikini?": [
+    [
+      "Who is the director of Aach... Aku Jatuh Cinta?",
+      "Who is the director of Ferragosto In Bikini?",
+      "Which of the directors of Aach... Aku Jatuh Cinta and Ferragosto In Bikini is younger?"
+    ],
+    -0.04730213517351105
+  ],
+  "Which film was released more recently, The Unkissed Bride or Fiorile?": [
+    [
+      "When was The Unkissed Bride released?",
+      "When was Fiorile released?"
+    ],
+    -7.911104785736843e-05
+  ],
+  "What nationality is Princess Marie Gasparine Of Saxe-Altenburg's husband?": [
+    [
+      "Who is Princess Marie Gasparine Of Saxe-Altenburg's husband?",
+      "What is the nationality of <1>?"
+    ],
+    -0.009358035008783702
+  ],
+  "Where was the place of death of Kim Utzon's father?": [
+    [
+      "Who is Kim Utzon's father?",
+      "Where was the place of death of <1>?"
+    ],
+    -0.0005695252059190475
+  ],
+  "When did Edmund Grey, 1St Earl Of Kent's father die?": [
+    [
+      "Who is Edmund Grey, 1St Earl Of Kent's father?",
+      "When did <1> die?"
+    ],
+    -3.8564205125e-05
+  ],
+  "Which film was released earlier, The Apocalypse Code or Just Imagine?": [
+    [
+      "When was The Apocalypse Code released?",
+      "When was Just Imagine released?"
+    ],
+    -3.837048991875e-06
+  ],
+  "Which film has the director died earlier, No, No, Nanette (1930 Film) or What'S Your Husband Doing??": [
+    [
+      "When did the director of No, No, Nanette (1930 Film) die?",
+      "When did the director of What'S Your Husband Doing?? die?"
+    ],
+    -0.00042049323084676475
+  ],
+  "Who is Asma Al-Assad's father-in-law?": [
+    [
+      "Who is Asma Al-Assad's husband?",
+      "Who is the father of <1>?"
+    ],
+    -0.003106921973899
+  ],
+  "Who is the spouse of the performer of song Dreamworld (Robin Thicke Song)?": [
+    [
+      "Who is the performer of song Dreamworld (Robin Thicke Song)?",
+      "Who is the spouse of <1>?"
+    ],
+    -0.00502439321331
+  ],
+  "What is the place of birth of the director of film Will Not End Here?": [
+    [
+      "Who is the director of the film Will Not End Here?",
+      "What is the place of birth of <1>?"
+    ],
+    -0.0125998210900064
+  ],
+  "Which film was released more recently, A Night In Casablanca or Matir Ghar?": [
+    [
+      "When was A Night In Casablanca released?",
+      "When was Matir Ghar released?"
+    ],
+    -1.1644580422272727e-05
+  ],
+  "Who is the mother of the performer of song Passion (Utada Hikaru Song)?": [
+    [
+      "Who is the performer of song Passion (Utada Hikaru Song)?",
+      "Who is the mother of <1>?"
+    ],
+    -0.042323946952352594
+  ],
+  "Which film has the director who is older, The Return Of Boston Blackie or Dayavan?": [
+    [
+      "Who is the director of The Return Of Boston Blackie?",
+      "Who is the director of Dayavan?",
+      "Which of the directors <1> and <2> is older?"
+    ],
+    -0.07899055350331657
+  ],
+  "Which film has the director who is older, Instructions Not Included or Tainted?": [
+    [
+      "Who is the director of Instructions Not Included?",
+      "Who is the director of Tainted?",
+      "Which of <1> and <2> is older?"
+    ],
+    -0.009060834482407576
+  ],
+  "Who died first, Lotte Backes or Willem Van Haecht?": [
+    [
+      "When did Lotte Backes die?",
+      "When did Willem Van Haecht die?"
+    ],
+    -1.3794217757142857e-06
+  ],
+  "Which film has the director who died later, Ridin' Pretty or How Strange To Be Named Federico?": [
+    [
+      "Who is the director of Ridin' Pretty?",
+      "Who is the director of How Strange To Be Named Federico?",
+      "Which of the directors of Ridin' Pretty and How Strange To Be Named Federico died later?"
+    ],
+    -0.024772753058875746
+  ],
+  "Which film has the director who was born earlier, Brink Of Disaster! or Pro Domo?": [
+    [
+      "Who is the director of Brink Of Disaster!?",
+      "Who is the director of Pro Domo?",
+      "Who was born earlier, <1> or <2>?"
+    ],
+    -0.005685693826085279
+  ],
+  "What is the place of birth of the director of film Reel Zombies?": [
+    [
+      "Who is the director of film Reel Zombies?",
+      "What is the place of birth of <1>?"
+    ],
+    -0.03350036548028044
+  ],
+  "Where was the father of Eric Young Jr. born?": [
+    [
+      "Who is the father of Eric Young Jr.?",
+      "Where was <1> born?"
+    ],
+    -0.000328087806858
+  ],
+  "When is John Dalrymple, 12Th Earl Of Stair's father's birthday?": [
+    [
+      "Who is John Dalrymple, 12Th Earl Of Stair's father?",
+      "When is <1>'s birthday?"
+    ],
+    -9.08868027137931e-06
+  ],
+  "What nationality is the director of film La Torre De Suso?": [
+    [
+      "Who is the director of film La Torre De Suso?",
+      "What nationality is <1>?"
+    ],
+    -0.00037431717376818185
+  ],
+  "Who was born first, Mary Lou Marzian or Charles Gonthier, Prince Of Schwarzburg-Sondershausen?": [
+    [
+      "When was Mary Lou Marzian born?",
+      "When was Charles Gonthier, Prince Of Schwarzburg-Sondershausen born?"
+    ],
+    -4.470348375e-07
+  ],
+  "Who died later, Giovanni Dei Conti Di Segni or Sakari Simelius?": [
+    [
+      "When did Giovanni Dei Conti Di Segni die?",
+      "When did Sakari Simelius die?"
+    ],
+    -9.189049704166667e-07
+  ],
+  "Which country Katherine De Stafford's husband is from?": [
+    [
+      "Who is Katherine De Stafford's husband?",
+      "Which country is <1> from?"
+    ],
+    -1.3966309398947368e-05
+  ],
+  "Which film was released first, S*P*Y*S or Why Would I Lie??": [
+    [
+      "When was S*P*Y*S released?",
+      "When was Why Would I Lie? released?"
+    ],
+    -0.001371389104967727
+  ],
+  "Which film has the director who is older than the other, Street Days or The Story Of Two Women?": [
+    [
+      "Who is the director of Street Days?",
+      "Who is the director of The Story Of Two Women?",
+      "Which director is older, <1> or <2>?"
+    ],
+    -0.016999200394179428
+  ],
+  "Who is Mary Willing Byrd's child?": [
+    [
+      "Who is Mary Willing Byrd?",
+      "Who is the child of <1>?"
+    ],
+    -0.0005958142883626316
+  ],
+  "Which film was released earlier, Robotech: The Movie or Lakeeran?": [
+    [
+      "When was Robotech: The Movie released?",
+      "When was Lakeeran released?"
+    ],
+    -3.99664838368421e-06
+  ],
+  "Where was the place of death of Phintys's father?": [
+    [
+      "Who is Phintys's father?",
+      "Where was the place of death of <1>?"
+    ],
+    -0.00025006702789285716
+  ],
+  "Which film came out first, The Tango Of Our Childhood or Clubbed?": [
+    [
+      "When was The Tango Of Our Childhood released?",
+      "When was Clubbed released?"
+    ],
+    -2.6934677187222222e-05
+  ],
+  "Are both airports, Far View Airport and Bellevue Airfield, located in the same country?": [
+    [
+      "In which country is Far View Airport located?",
+      "In which country is Bellevue Airfield located?"
+    ],
+    -3.500418117272727e-06
+  ],
+  "Who is the paternal grandfather of Mehmet I Of Karaman?": [
+    [
+      "Who is the father of Mehmet I Of Karaman?",
+      "Who is the father of <1>?"
+    ],
+    -0.02598148327934783
+  ],
+  "Who is younger, Achim Steiner or Norberto Bravo?": [
+    [
+      "When was Achim Steiner born?",
+      "When was Norberto Bravo born?"
+    ],
+    -6.550236692631578e-06
+  ],
+  "Where did the director of film Little Door Gods study?": [
+    [
+      "Who is the director of film Little Door Gods?",
+      "Where did <1> study?"
+    ],
+    -0.035028266905
+  ],
+  "Which film has the director who died later, Searchlight On Japan or Beauties Of The Night?": [
+    [
+      "Who is the director of Searchlight On Japan?",
+      "Who is the director of Beauties Of The Night?",
+      "Who died later, <1> or <2>?"
+    ],
+    -0.04741387565852472
+  ],
+  "Which film came out earlier, Le Voyage En Douce or Cobwebs In Concrete?": [
+    [
+      "When was Le Voyage En Douce released?",
+      "When was Cobwebs In Concrete released?"
+    ],
+    -0.001494801032008
+  ],
+  "Which film has the director who died earlier, Sam'S Boy or The Pioneers (1926 Film)?": [
+    [
+      "Who is the director of Sam'S Boy?",
+      "Who is the director of The Pioneers (1926 Film)?",
+      "Which of the directors of Sam'S Boy and The Pioneers (1926 Film) died earlier?"
+    ],
+    -0.025998728731258167
+  ],
+  "Which film came out earlier, Berkeley In The Sixties or Caesar Must Die?": [
+    [
+      "When was Berkeley In The Sixties released?",
+      "When was Caesar Must Die released?"
+    ],
+    -1.8753503098947368e-05
+  ],
+  "Are both Chak 26/11-L, Chichawatni and Chah-E Ali Kapari located in the same country?": [
+    [
+      "In which country is Chak 26/11-L, Chichawatni located?",
+      "In which country is Chah-E Ali Kapari located?"
+    ],
+    -8.242971407941177e-06
+  ],
+  "Which film has the director born later, La Carapate or Rodeo Rhythm?": [
+    [
+      "Who is the director of La Carapate?",
+      "Who is the director of Rodeo Rhythm?",
+      "When was the director of La Carapate born?",
+      "When was the director of Rodeo Rhythm born?"
+    ],
+    -0.0026650962973716317
+  ],
+  "Where did Mary Ann Angell's husband die?": [
+    [
+      "Who is Mary Ann Angell's husband?",
+      "Where did <1> die?"
+    ],
+    -0.00023249575789473684
+  ],
+  "What is the place of birth of the director of film Panam (Film)?": [
+    [
+      "Who is the director of film Panam (Film)?",
+      "What is the place of birth of <1>?"
+    ],
+    -0.008094053470122
+  ],
+  "Which film has the director died later, The Fighting Fist Of Shanghai Joe or With Life And Soul?": [
+    [
+      "Who is the director of The Fighting Fist Of Shanghai Joe?",
+      "Who is the director of With Life And Soul?",
+      "When did the director of The Fighting Fist Of Shanghai Joe die?",
+      "When did the director of With Life And Soul die?"
+    ],
+    -7.58217823845098e-05
+  ],
+  "Where was the place of death of Enheduanna's father?": [
+    [
+      "Who is Enheduanna's father?",
+      "Where was the place of death of <1>?"
+    ],
+    -0.006048242012968572
+  ],
+  "What is the place of birth of Prince Nayef Bin Abdullah's father?": [
+    [
+      "Who is Prince Nayef Bin Abdullah's father?",
+      "What is the place of birth of <1>?"
+    ],
+    -5.110968897608695e-05
+  ],
+  "Who was born later, Edwin Vose Sumner Jr. or Rene Röthke?": [
+    [
+      "When was Edwin Vose Sumner Jr. born?",
+      "When was Rene Röthke born?"
+    ],
+    -8.873317391304348e-06
+  ],
+  "Which film came out earlier, 100,000 Cobbers or A Thousand Months?": [
+    [
+      "When was 100,000 Cobbers released?",
+      "When was A Thousand Months released?"
+    ],
+    -0.0039724765954289995
+  ],
+  "Which country the director of film Romanoff And Juliet (1961 Film) is from?": [
+    [
+      "Who is the director of the film Romanoff And Juliet (1961 Film)?",
+      "Which country is <1> from?"
+    ],
+    -0.0072113277319625
+  ],
+  "Who is Archduke Charles Joseph Of Austria (1745–1761)'s father?": [
+    [
+      "Who is Archduke Charles Joseph Of Austria (1745–1761)?",
+      "Who is the father of <1>?"
+    ],
+    -0.0005875016872303572
+  ],
+  "Andrei Ivanovich Gorchakov commanded the 1st Infanty Corps in what major engagement of the Napoleonic Wars?": [
+    [
+      "Which major engagements of the Napoleonic Wars did Andrei Ivanovich Gorchakov participate in?",
+      "In which of these engagements did Andrei Ivanovich Gorchakov command the 1st Infantry Corps?"
+    ],
+    -0.06684652508868068
+  ],
+  "Where was the company, of which David DeVoe is Chief Financial Officer, ranked in the world, in 2014, in terms of revenue, against similar types of company ?": [
+    [
+      "Which company has David DeVoe as Chief Financial Officer?",
+      "Where was <1> ranked in the world, in 2014, in terms of revenue, against similar types of company?"
+    ],
+    -0.0368408293571635
   ]
 }
