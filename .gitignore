@@ -10,3 +10,4 @@ pyvenv.cfg
 *.pyc
 *.pth
 *.jsonl
+*.json
