@@ -3,7 +3,7 @@ import requests
 import time
 import os
 import json, jsonlines
-from provider_req import ProviderReq
+from Tree_Generation.provider_req import ProviderReq
 
 class TogetherReq(ProviderReq):
     # meta-llama/Llama-Vision-Free is free but doesnt support log_probs which are necessary for probtree

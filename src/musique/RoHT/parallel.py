@@ -28,3 +28,4 @@ def parallel_process_data(data, handle_item, workers=20, callback=None):
 
     # print(f"Successful tasks: {successful}")
     print(f"Failed tasks: {[[node.get('question_text', 'N/A') for node in tree] if isinstance(tree, list) else 'Invalid structure' for tree in failed]}")
+    print(f"Total Failed: {len(failed)}")

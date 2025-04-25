@@ -8,8 +8,8 @@ import math
 # import re
 
 q2a = {}
-# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_test_random_500.jsonl')]
-raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_dev_random_100.jsonl')]
+raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_test_random_500.jsonl')]
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/hotpotqa__v2_dev_random_100.jsonl')]
 q2dq = json.load(open("../Tree_Generation/question_decompositions.json"))
 q2gold = {}
 for item in raw_data:

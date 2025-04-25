@@ -44,7 +44,7 @@ def solve(tree):
                 node["child_answer"], node["answer"] = aggregate_multihop_answer(node, tree)
             #print(node)
     except Exception as e:
-        print("ERROR CASE")
+        print("ERROR CASE", e)
         print(tree[-1])
         raise e
 

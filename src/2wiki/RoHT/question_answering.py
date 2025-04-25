@@ -36,7 +36,7 @@ def postprocess(response):
         response['text'] = response['message']['content']
         cot = response['text'].strip()
         if len(token_logprobs) == 0:
-            return 'ERROR: empty output', -100, cot
+            return 'ERROR: empty output', -100, cot, []
         # TODO:: Why is this commented ? this leds into some outputs with unknown but returning probabilities.
         # if "Unknown" in cot:
         #     return "Unknow", sum(token_logprobs) / len(token_logprobs), cot
@@ -59,7 +59,7 @@ def postprocess(response):
             cot_process_logprob = sum(cot_process_logprobs) / len(cot_process_logprobs)
         return answer, cot_process_logprob, cot, token_logprobs
     except Exception as e:
-        return 'ERROR: Failed to calculate', -100, "", []
+        return 'ERROR: Failed to calculate', -100, cot, []
 
 def get_cb_answer(question):
     instruction = '\n'.join([_.strip() for _ in open('cb/prompt.txt').readlines()])

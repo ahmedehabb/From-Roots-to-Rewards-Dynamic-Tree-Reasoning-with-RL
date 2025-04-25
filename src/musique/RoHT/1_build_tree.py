@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 
-# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_test_random_500.jsonl')]
-raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_dev_random_100.jsonl')]
+raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_test_random_500.jsonl')]
+# raw_data = [json.loads(line.strip()) for line in open('../../../released_data/musique_ans__v2_dev_random_100.jsonl')]
 q2sub_q = json.load(open("../Tree_Generation/tree.json"))
 q2dq = json.load(open("../Tree_Generation/question_decompositions.json"))
 
