@@ -108,19 +108,16 @@ python openai_service.py
 Put your Serp API key in `src/hotpotqa/RoHT/question_answering.py` so that you can use Google Search API.
 
 ## Run Experirments
-First generate question decompostion trees, then conduct probablistic reasoning on these trees.
-```
-cd src/{dataset_name} # 2wiki, musique, hotpotqa
-bash 0_generate_tree.sh
-bash 1_conduct_reasoning.sh
-```
 
-We have released our generated question decompostion trees so that you can directly run probablistic reasoning.
-```
-src/{dataset_name}/Tree_Generation/tree.json # 2wiki, musique, hotpotqa
-```
+Experiments
+Our implementation contains several experiment variants exploring reinforcement learning for dynamic ProbTree reasoning:
 
-We also released our prediction results corresponding to the reported scores in
-```
-src/{dataset_name}/RoHT/results/released.json # 2wiki, musique, hotpotqa
-```
+- GRPO: An alternative reinforcement learning algorithm tested for tree construction policies.
+
+- PPO: Proximal Policy Optimization method experimented with as a baseline RL agent.
+
+- Energy based models: Explored for scoring and guiding tree expansions using energy functions.
+
+- deep reinforcement learning: The core method presented in our paper, which employs a deep RL agent to incrementally construct and refine reasoning trees by dynamically selecting actions (decompose, retrieve, aggregate) based on confidence and state.
+
+All outputs and logs for each experiment are stored in the from_roots_to_rewards/ and corresponding directory.
