@@ -1,4 +1,6 @@
-# ProbTree
+# From Roots to Rewards: Dynamic Tree Reasoning with RL (Dynamic ProbTree)
+Source code and experiments for our enhanced Probabilistic Tree-of-Thought (ProbTree) framework, which introduces dynamic reinforcement learning for adaptive and efficient tree-structured reasoning on knowledge-intensive complex questions.
+
 Source code for findings of EMNLP 2023 paper "Probabilistic Tree-of-thought Reasoning for Answering Knowledge-intensive Complex Questions".
 
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/Neo-Zhangjiajie/ProbTree/issues)
@@ -6,11 +8,32 @@ Source code for findings of EMNLP 2023 paper "Probabilistic Tree-of-thought Reas
 [![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
 [![paper](https://img.shields.io/badge/Paper-EMNLP2023-lightgrey?style=flat-square)](https://arxiv.org/pdf/2311.13982.pdf)
 
-> In this paper, we propose a novel approach: Probabilistic Tree-of-thought Reasoning (ProbTree). First, LLMs translate a complex question into a query tree, in which each non-root node denotes a sub-question of its parent node. Then, probabilistic reasoning is conducted over the tree, by solving questions from leaf to root considering the confidence of both question decomposing and answering. During reasoning, for leaf nodes, LLMs choose a more confident answer from Closed-book QA that employs parametric knowledge and Open-book QA that employs retrieved external knowledge, thus eliminating the negative retrieval problem. For non-leaf nodes, with the hierarchical structure, LLMs have broader sights and are able to globally reason with the information from child nodes, thus recovering from local errors. The experiments on three Complex QA datasets under the open-domain setting show that our approach outperforms SOTA methods significantly, demonstrating the effect of probabilistic tree-of-thought reasoning.
+> Abstract
+Modern language models address complex questions through chain-of-thought (CoT) reasoning (Wei et al., 2023) and retrieval augmentation (Lewis et al., 2021), yet struggle with error propagation and knowledge integration. Tree-structured reasoning methods, particularly the Probabilistic Tree-of-Thought (ProbTree) (Cao et al., 2023) framework, mitigate these issues by decomposing questions into hierarchical structures and selecting answers through confidence-weighted aggregation of parametric and retrieved knowledge (Yao et al., 2023).
 
-<div  align="center"> 
-<img src="figures/method.png" width = "100%"/>
-</div>
+However, ProbTree’s static implementation introduces two key limitations:
+
+The reasoning tree is fixed during the initial construction phase, preventing dynamic adaptation to intermediate results.
+
+Each node requires exhaustive evaluation of all possible solution strategies, causing computational inefficiency.
+
+We present a dynamic reinforcement learning (Sutton and Barto, 2018) framework that transforms tree-based reasoning into an adaptive process. Our approach incrementally constructs the reasoning tree based on real-time confidence estimates while learning optimal policies for action selection (decomposition, retrieval, or aggregation). This maintains ProbTree’s probabilistic rigor while improving both solution quality and computational efficiency through selective expansion and focused resource allocation.
+
+This work establishes a new paradigm for tree-structured reasoning that balances the reliability of probabilistic frameworks with the flexibility required for real-world question answering systems.
+
+Overview
+ProbTree decomposes a complex question into a hierarchical tree of sub-questions, performing probabilistic reasoning from leaf nodes upwards. Leaf node answers combine closed-book QA and open-book retrieval to mitigate retrieval errors. Internal nodes aggregate child node information with confidence weighting for robust reasoning.
+
+Our dynamic extension allows the tree structure to adapt during reasoning, using reinforcement learning to guide decomposition and action choices, improving efficiency and accuracy.
+
+<div align="center"> <img src="figures/method.png" width="100%"/> </div>
+New Method: Dynamic Adaptive Tree Reasoning
+We introduce a novel adaptive reasoning strategy that incrementally constructs the reasoning tree based on real-time confidence metrics. By leveraging reinforcement learning, our approach selectively decides when to decompose, retrieve, or aggregate information at each node, significantly reducing computational cost while improving answer accuracy.
+
+This method enables dynamic expansion and pruning of the reasoning tree, allowing the system to focus resources on promising solution paths and adapt to intermediate results.
+
+<div align="center"> <img src="figures/new_method.png" width="100%"/> </div>
+
 
 ## File Structure
 ```
@@ -20,6 +43,7 @@ ProbTree/
 │    ├─  musique: original MuSiQue dataset
 │    └── enwiki-20171001-pages-meta-current-withlinks-abstracts: Wikipedia dump for HotpotQA
 ├─  released_data/: released test samples by IRCoT
+├─  From roots to rewards/: contains all of our experiments
 ├─  src/:
 │    ├─  2wiki: experiment codes for 2WikiMQA
 │        ├─  RoHT: code for probablisitc reasoning
