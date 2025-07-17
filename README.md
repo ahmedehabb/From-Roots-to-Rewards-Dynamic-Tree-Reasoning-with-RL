@@ -15,27 +15,67 @@ Source code and results correspond to our paper "From Roots to Rewards: Dynamic 
 Modern language models address complex questions through chain-of-thought (CoT) reasoning (Wei et al., 2023) and retrieval augmentation (Lewis et al., 2021), yet struggle with error propagation and knowledge integration. Tree-structured reasoning methods, particularly the Probabilistic Tree-of-Thought (ProbTree) (Cao et al., 2023) framework, mitigate these issues by decomposing questions into hierarchical structures and selecting answers through confidence-weighted aggregation of parametric and retrieved knowledge (Yao et al., 2023).
 
 However, ProbTree’s static implementation introduces two key limitations:
-
-The reasoning tree is fixed during the initial construction phase, preventing dynamic adaptation to intermediate results.
-
-Each node requires exhaustive evaluation of all possible solution strategies, causing computational inefficiency.
+- The reasoning tree is fixed during the initial construction phase, preventing dynamic adaptation to intermediate results.
+- Each node requires exhaustive evaluation of all possible solution strategies, causing computational inefficiency.
 
 We present a dynamic reinforcement learning (Sutton and Barto, 2018) framework that transforms tree-based reasoning into an adaptive process. Our approach incrementally constructs the reasoning tree based on real-time confidence estimates while learning optimal policies for action selection (decomposition, retrieval, or aggregation). This maintains ProbTree’s probabilistic rigor while improving both solution quality and computational efficiency through selective expansion and focused resource allocation.
 
 This work establishes a new paradigm for tree-structured reasoning that balances the reliability of probabilistic frameworks with the flexibility required for real-world question answering systems.
 
-Overview
+## Overview
+
+### Original ProbTree
 ProbTree decomposes a complex question into a hierarchical tree of sub-questions, performing probabilistic reasoning from leaf nodes upwards. Leaf node answers combine closed-book QA and open-book retrieval to mitigate retrieval errors. Internal nodes aggregate child node information with confidence weighting for robust reasoning.
+
+<div align="center"> <img src="figures/method.png" width="100%"/> </div>
+
 
 Our dynamic extension allows the tree structure to adapt during reasoning, using reinforcement learning to guide decomposition and action choices, improving efficiency and accuracy.
 
-<div align="center"> <img src="figures/method.png" width="100%"/> </div>
-New Method: Dynamic Adaptive Tree Reasoning
-We introduce a novel adaptive reasoning strategy that incrementally constructs the reasoning tree based on real-time confidence metrics. By leveraging reinforcement learning, our approach selectively decides when to decompose, retrieve, or aggregate information at each node, significantly reducing computational cost while improving answer accuracy.
+### New Method: Dynamic Adaptive Tree Reasoning
+We introduce a novel adaptive tree reasoning strategy that incrementally constructs the reasoning tree based on real-time confidence metrics. By leveraging reinforcement learning, our approach selectively decides when to decompose, retrieve, or aggregate information at each node, significantly reducing computational cost while improving answer accuracy.
 
 This method enables dynamic expansion and pruning of the reasoning tree, allowing the system to focus resources on promising solution paths and adapt to intermediate results.
 
-<div align="center"> <img src="figures/new_method.png" width="100%" height=100%/> </div>
+<div align="center"> <img src="figures/new_method.png" width="100%" height="100%"/> </div>
+
+
+#### Our Approach
+Our dynamic reinforcement learning (RL) framework addresses the core limitations of the static ProbTree method through:
+
+- On-Demand Tree Construction: The reasoning tree is incrementally constructed during inference. Nodes are only expanded when confidence in current decomposition is low.
+- Adaptive Action Selection: An RL agent learns optimal strategies (decompose, retrieve, aggregate) at each step instead of evaluating all possibilities exhaustively.
+- Flexible Reasoning Operations: The agent can:
+    - Further decompose complex sub-questions
+    - Switch between parametric (CB) and retrieval-based (OB) reasoning based on confidence
+    - Utilize new reasoning actions such as Reformulation and Resampling to improve exploration and robustness
+
+This design maintains the probabilistic rigor of the original ProbTree framework while enabling flexibility, efficiency, and higher accuracy in complex QA tasks.
+
+#### Model Variants
+We implemented and evaluated multiple RL agent architectures to explore different state representations and reasoning capabilities:
+- Greedy Hand-Crafted Baseline: A non-learning baseline with hardcoded heuristics
+- DQN with Question-Only State: Learns solely from the input question representation
+- Transformer-based DQN: Employs transformer encoders for richer state understanding
+- DQN with Question + CB + OB: Combines parametric (CB) and open-book (OB) knowledge in state
+- DQN with Reformulation Actions: Enables question reformulation to improve downstream reasoning
+- DQN with Resampling Action: Adds an action to resample reasoning paths when uncertain
+
+#### Training Regimes
+Each variant was trained under different reward configurations:
+
+- High Accuracy: α = 2.0, β = 0.05
+- Balanced Trade-off: α = 1.0, β = 0.1
+- Efficiency Focused: α = 0.5, β = 0.2
+
+We also experimented with: Specialized regimes for reformulation and resampling actions
+
+#### Evaluation Settings
+To assess generalization and robustness, we evaluate under the following configurations:
+
+1. In-domain Evaluation: Train and test on the same dataset (e.g., HotpotQA → HotpotQA)
+2. Cross-domain Generalization: Train on one domain and test on another (e.g., HotpotQA → 2Wiki/MuSiQue)
+3. Multi-domain Generalization: Train across all datasets and test across all splits
 
 ## File Structure
 ```
