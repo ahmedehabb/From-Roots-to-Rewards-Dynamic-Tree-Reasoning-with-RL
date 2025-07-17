@@ -35,8 +35,9 @@ We introduce a novel adaptive reasoning strategy that incrementally constructs t
 
 This method enables dynamic expansion and pruning of the reasoning tree, allowing the system to focus resources on promising solution paths and adapt to intermediate results.
 
-<div align="center"> <img src="figures/new_method.png" width="100%"/> </div>
-
+<div align="center">
+  <img src="figures/new_method.png" style="width:100%; max-height:800px; object-fit:contain;" />
+</div>
 
 ## File Structure
 ```
