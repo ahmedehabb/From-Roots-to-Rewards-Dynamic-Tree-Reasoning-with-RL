@@ -1,0 +1,122 @@
+Greedy Solver match rate: 70.40%
+Method Counts for Greedy:
+OB answer : 181
+CB answer : 52
+Child answer : 167
+
+--------------------
+RL (question only)
+Evaluating model: High_Accuracy
+Token indices sequence length is longer than the specified maximum sequence length for this model (1594 > 1024). Running this sequence through the model will result in indexing errors
+Evaluation Accuracy: 58.60%
+Final Accuracy for High_Accuracy: 58.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 58.80%
+Final Accuracy for Balanced: 58.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 60.40%
+Final Accuracy for Efficiency_Focused: 60.40%
+
+balanced_num_calls 173
+efficiency_num_calls 177
+high_accuracy_num_calls 199
+
+--------------------
+RL (question + cb+ ob)
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 61.20%
+Final Accuracy for High_Accuracy: 61.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 58.20%
+Final Accuracy for Balanced: 58.20%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 60.60%
+Final Accuracy for Efficiency_Focused: 60.60%
+
+
+balanced_num_calls 154
+efficiency_num_calls 167
+high_accuracy_num_calls 180
+
+--------------------
+RL (question + cb+ ob + reform)
+
+Final Accuracy for High_Accuracy_Priority: 56.20%
+Total parent nodes: 500
+Times answer matches gold answer: 281
+
+Final Accuracy for Balanced_Reward_Tradeoff: 58.80%
+Total parent nodes: 500
+Times answer matches gold answer: 294
+
+Final Accuracy for Efficiency_Focused: 60.20%
+Total parent nodes: 500
+Times answer matches gold answer: 301
+
+Final Accuracy for Exploration_Focused: 57.60%
+Total parent nodes: 500
+Times answer matches gold answer: 288
+
+
+config High_Accuracy_Priority num calls 227
+config Balanced_Reward_Tradeoff num calls 205
+config Efficiency_Focused num calls 196
+config Exploration_Focused num calls 211
+
+--------------------
+RL (question + transformers)
+
+Final Accuracy for High_Accuracy: 69.20%
+Total parent nodes: 500
+Times answer matches gold answer: 346
+
+Final Accuracy for Balanced: 62.20%
+Total parent nodes: 500
+Times answer matches gold answer: 311
+
+Final Accuracy for Efficiency_Focused: 61.00%
+Total parent nodes: 500
+Times answer matches gold answer: 305
+
+balanced_num_calls 144
+efficiency_num_calls 146
+high_accuracy_num_calls 178
+
+--------------------
+Random solver
+Evaluating model: Random
+Evaluation Accuracy: 62.40%
+Final Accuracy for Random: 62.40%
+
+Method Counts for Random:
+  CB: 225
+  Child: 176
+  OB: 99
+
+num llm calls: 346
+
+--------------------
+RL (question + cb+ ob + resampling)
+Final Accuracy for High_Accuracy: 69.60%
+Total parent nodes: 500
+Times answer matches gold answer: 348
+
+Final Accuracy for Balanced: 52.20%
+Total parent nodes: 500
+Times answer matches gold answer: 261
+
+Final Accuracy for Efficiency_Focused: 59.40%
+Total parent nodes: 500
+Times answer matches gold answer: 297
+
+balanced_num_calls 480
+efficiency_num_calls 113
+high_accuracy_num_calls 480

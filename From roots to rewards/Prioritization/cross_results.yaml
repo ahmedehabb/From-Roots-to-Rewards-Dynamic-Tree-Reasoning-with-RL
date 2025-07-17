@@ -1,0 +1,530 @@
+Trained on Musique - Test on hotpot qa
+
+greedy: 69.20%
+-------------
+# RL Approach with deep learning using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 59.20%
+Final Accuracy for High_Accuracy: 59.20%
+
+Evaluating model: Balanced
+Evaluation Accuracy: 60.60%
+Final Accuracy for Balanced: 60.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 61.00%
+Final Accuracy for Efficiency_Focused: 61.00%
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 60.80%
+Final Accuracy for High_Accuracy: 60.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 61.20%
+Final Accuracy for Balanced: 61.20%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 61.80%
+Final Accuracy for Efficiency_Focused: 61.80%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 61.20%
+Final Accuracy for High_Accuracy_Priority: 61.20%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 58.60%
+Final Accuracy for Balanced_Reward_Tradeoff: 58.60%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 59.80%
+Final Accuracy for Efficiency_Focused: 59.80%
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 59.20%
+Final Accuracy for High_Accuracy: 59.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 57.60%
+Final Accuracy for Balanced: 57.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 63.00%
+Final Accuracy for Efficiency_Focused: 63.00%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 57.20%
+Final Accuracy for High_Accuracy: 57.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 60.80%
+Final Accuracy for Balanced: 60.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 58.60%
+Final Accuracy for Efficiency_Focused: 58.60%
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Trained on Musique - Test on 2wiki
+
+Greedy Solver match rate: 73.00%
+-------------
+# RL Approach with deep learning using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 59.20%
+Final Accuracy for High_Accuracy: 59.20%
+
+Evaluating model: Balanced
+Evaluation Accuracy: 60.60%
+Final Accuracy for Balanced: 60.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 61.00%
+Final Accuracy for Efficiency_Focused: 61.00%
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 52.80%
+Final Accuracy for High_Accuracy: 52.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 55.00%
+Final Accuracy for Balanced: 55.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 56.20%
+Final Accuracy for Efficiency_Focused: 56.20%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 54.40%
+Final Accuracy for High_Accuracy_Priority: 54.40%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 55.20%
+Final Accuracy for Balanced_Reward_Tradeoff: 55.20%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 57.00%
+Final Accuracy for Efficiency_Focused: 57.00%
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 52.20%
+Final Accuracy for High_Accuracy: 52.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 52.80%
+Final Accuracy for Balanced: 52.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 57.00%
+Final Accuracy for Efficiency_Focused: 57.00%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 62.40%
+Final Accuracy for High_Accuracy: 62.40%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 60.40%
+Final Accuracy for Balanced: 60.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 65.20%
+Final Accuracy for Efficiency_Focused: 65.20%
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Trained on 2wiki - Test on Musique
+
+
+Greedy Solver match rate: 46.00%
+-------------
+# RL Approach with deep learning using question only in state
+
+
+Evaluating model: High_Accuracy
+Token indices sequence length is longer than the specified maximum sequence length for this model (1788 > 1024). Running this sequence through the model will result in indexing errors
+Evaluation Accuracy: 24.80%
+Final Accuracy for High_Accuracy: 24.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 26.00%
+Final Accuracy for Balanced: 26.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 24.80%
+Final Accuracy for Efficiency_Focused: 24.80%
+
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 25.60%
+Final Accuracy for High_Accuracy: 25.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 25.40%
+Final Accuracy for Balanced: 25.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 23.80%
+Final Accuracy for Efficiency_Focused: 23.80%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 25.00%
+Final Accuracy for High_Accuracy_Priority: 25.00%
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 26.20%
+Final Accuracy for Balanced_Reward_Tradeoff: 26.20%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 27.20%
+Final Accuracy for Efficiency_Focused: 27.20%
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 23.20%
+Final Accuracy for High_Accuracy: 23.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 26.80%
+Final Accuracy for Balanced: 26.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 23.20%
+Final Accuracy for Efficiency_Focused: 23.20%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 32.20%
+Final Accuracy for High_Accuracy: 32.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 36.60%
+Final Accuracy for Balanced: 36.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 34.00%
+Final Accuracy for Efficiency_Focused: 34.00%
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Trained on 2wiki - Test on HotpotQA
+
+
+Greedy Solver match rate: 70.60%
+-------------
+# RL Approach with deep learning using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 59.40%
+Final Accuracy for High_Accuracy: 59.40%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 59.40%
+Final Accuracy for Balanced: 59.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 56.60%
+Final Accuracy for Efficiency_Focused: 56.60%
+
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 59.60%
+Final Accuracy for High_Accuracy: 59.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 60.40%
+Final Accuracy for Balanced: 60.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 57.40%
+Final Accuracy for Efficiency_Focused: 57.40%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 58.40%
+Final Accuracy for High_Accuracy_Priority: 58.40%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 59.80%
+Final Accuracy for Balanced_Reward_Tradeoff: 59.80%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 60.40%
+Final Accuracy for Efficiency_Focused: 60.40%
+
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 55.80%
+Final Accuracy for High_Accuracy: 55.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 62.20%
+Final Accuracy for Balanced: 62.20%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 55.80%
+Final Accuracy for Efficiency_Focused: 55.80%
+
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 63.00%
+Final Accuracy for High_Accuracy: 63.00%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 59.40%
+Final Accuracy for Balanced: 59.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 58.80%
+Final Accuracy for Efficiency_Focused: 58.80%
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Trained on Hotpotqa - Test on 2wiki
+
+
+Greedy Solver match rate: 74.40%
+-------------
+# RL Approach with deep learning using question only in state
+
+
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 56.20%
+Final Accuracy for High_Accuracy: 56.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 49.00%
+Final Accuracy for Balanced: 49.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 56.20%
+Final Accuracy for Efficiency_Focused: 56.20%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 57.60%
+Final Accuracy for High_Accuracy_Priority: 57.60%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 53.40%
+Final Accuracy for Balanced_Reward_Tradeoff: 53.40%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 53.80%
+Final Accuracy for Efficiency_Focused: 53.80%
+
+
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 71.60%
+Final Accuracy for High_Accuracy: 71.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 57.00%
+Final Accuracy for Balanced: 57.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 54.00%
+Final Accuracy for Efficiency_Focused: 54.00%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 63.40%
+Final Accuracy for High_Accuracy: 63.40%
+
+Evaluating model: Balanced
+Evaluation Accuracy: 62.00%
+Final Accuracy for Balanced: 62.00%
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 55.80%
+Final Accuracy for Efficiency_Focused: 55.80%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Trained on Hotpotqa - Test on Musique
+
+Greedy Solver match rate: 44.20%
+-------------
+# RL Approach with deep learning using question only in state
+
+
+-------------
+
+# RL Approach with deep learning (using Question + cb + ob)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 26.20%
+Final Accuracy for High_Accuracy: 26.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 24.00%
+Final Accuracy for Balanced: 24.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.60%
+Final Accuracy for Efficiency_Focused: 26.60%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + reformualtion)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 24.40%
+Final Accuracy for High_Accuracy_Priority: 24.40%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 24.60%
+Final Accuracy for Balanced_Reward_Tradeoff: 24.60%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 27.00%
+Final Accuracy for Efficiency_Focused: 27.00%
+
+-------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 21.60%
+Final Accuracy for High_Accuracy: 21.60%
+
+Evaluating model: Balanced
+Evaluation Accuracy: 27.00%
+Final Accuracy for Balanced: 27.00%
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 27.20%
+Final Accuracy for Efficiency_Focused: 27.20%
+
+-------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 34.40%
+Final Accuracy for High_Accuracy: 34.40%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 36.00%
+Final Accuracy for Balanced: 36.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 27.00%
+Final Accuracy for Efficiency_Focused: 27.00%
+

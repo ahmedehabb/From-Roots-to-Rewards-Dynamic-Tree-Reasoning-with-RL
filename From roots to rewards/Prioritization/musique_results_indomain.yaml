@@ -1,0 +1,134 @@
+Greedy Solver match rate:
+Greedy Solver match rate: 44.20%
+
+cb_answer: 89
+ob_answer: 140
+child_answer: 271
+
+llm_calls: 480
+--------------------
+Total parent nodes: 500
+Times answer matches gold answer: 224
+Prob Tree Solver match rate: 44.80%
+
+Total parent nodes:  500
+Total non-parent nodes:  1659
+num_calls: 964
+--------------------
+RL (question only)
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 26.60%
+Final Accuracy for High_Accuracy: 26.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 26.00%
+Final Accuracy for Balanced: 26.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.60%
+Final Accuracy for Efficiency_Focused: 26.60%
+
+balanced_num_calls 184
+efficiency_num_calls 241
+high_accuracy_num_calls 174
+
+--------------------
+RL (question + cb+ ob)
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 26.20%
+Final Accuracy for High_Accuracy: 26.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 27.40%
+Final Accuracy for Balanced: 27.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.20%
+Final Accuracy for Efficiency_Focused: 26.20%
+
+balanced_num_calls 179
+efficiency_num_calls 185
+high_accuracy_num_calls 186
+
+--------------------
+RL (question + cb+ ob + reform)
+
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 26.40%
+Final Accuracy for High_Accuracy_Priority: 26.40%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 25.00%
+Final Accuracy for Balanced_Reward_Tradeoff: 25.00%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 27.00%
+Final Accuracy for Efficiency_Focused: 27.00%
+
+
+Evaluating model: Exploration_Focused, hidden_dim=64, lr=0.001, gamma=0.95
+Evaluation Accuracy: 24.00%
+Final Accuracy for Exploration_Focused: 24.00%
+
+config High_Accuracy_Priority num calls 234
+config Balanced_Reward_Tradeoff num calls 237
+config Efficiency_Focused num calls 187
+config Exploration_Focused num calls 192
+--------------------
+RL (question + transformers)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 24.80%
+Final Accuracy for High_Accuracy: 24.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 24.20%
+Final Accuracy for Balanced: 24.20%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.80%
+Final Accuracy for Efficiency_Focused: 26.80%
+
+balanced_num_calls 165
+efficiency_num_calls 153
+high_accuracy_num_calls 180
+--------------------
+Random solver
+
+Evaluating model: Random
+Evaluation Accuracy: 31.40%
+Final Accuracy for Random: 31.40%
+
+num llm calls: 324
+--------------------
+RL (question + cb+ ob + resampling)
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 28.20%
+Final Accuracy for High_Accuracy: 28.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 45.00%
+Final Accuracy for Balanced: 45.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 28.60%
+Final Accuracy for Efficiency_Focused: 28.60%
+
+balanced_num_calls 503
+efficiency_num_calls 502
+high_accuracy_num_calls 493

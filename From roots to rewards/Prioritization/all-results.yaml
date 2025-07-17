@@ -1,0 +1,268 @@
+results for training on all and testing on each of them: (hotpot, 2wiki, musique)
+
+hotpot
+Greedy Solver match rate: 70.80%
+
+2wiki
+Greedy Solver match rate: 77.20%
+
+musique
+Greedy Solver match rate: 45.20%
+
+------------------------------------------------------------------------
+# RL Approach with deep learning using question only in state
+
+hotpot
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 58.60%
+Final Accuracy for High_Accuracy: 58.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 61.00%
+Final Accuracy for Balanced: 61.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 58.00%
+Final Accuracy for Efficiency_Focused: 58.00%
+
+
+2wiki
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 55.20%
+Final Accuracy for High_Accuracy: 55.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 57.80%
+Final Accuracy for Balanced: 57.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 55.00%
+Final Accuracy for Efficiency_Focused: 55.00%
+    
+
+musique
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 25.20%
+Final Accuracy for High_Accuracy: 25.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 26.60%
+Final Accuracy for Balanced: 26.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.40%
+Final Accuracy for Efficiency_Focused: 26.40%
+------------------------------------------------------------------------
+# RL Approach with deep learning (using Question + cb + ob)
+
+hotpot
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 60.00%
+Final Accuracy for High_Accuracy: 60.00%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 57.40%
+Final Accuracy for Balanced: 57.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 61.80%
+Final Accuracy for Efficiency_Focused: 61.80%
+
+2wiki
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 55.20%
+Final Accuracy for High_Accuracy: 55.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 53.20%
+Final Accuracy for Balanced: 53.20%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 55.40%
+Final Accuracy for Efficiency_Focused: 55.40%
+
+musique
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 24.80%
+Final Accuracy for High_Accuracy: 24.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 25.00%
+Final Accuracy for Balanced: 25.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.60%
+Final Accuracy for Efficiency_Focused: 26.60%
+
+------------------------------------------------------------------------
+# RL Approach with deep learning (using Question + cb + ob + Reformulation of question)
+
+hotpot
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 61.80%
+Final Accuracy for High_Accuracy_Priority: 61.80%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 58.40%
+Final Accuracy for Balanced_Reward_Tradeoff: 58.40%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 59.60%
+Final Accuracy for Efficiency_Focused: 59.60%
+
+2wiki
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 58.80%
+Final Accuracy for High_Accuracy_Priority: 58.80%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 55.40%
+Final Accuracy for Balanced_Reward_Tradeoff: 55.40%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 52.40%
+Final Accuracy for Efficiency_Focused: 52.40%
+
+musique
+
+Evaluating model: High_Accuracy_Priority, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 25.80%
+Final Accuracy for High_Accuracy_Priority: 25.80%
+
+
+Evaluating model: Balanced_Reward_Tradeoff, hidden_dim=128, lr=0.001, gamma=0.99
+Evaluation Accuracy: 25.80%
+Final Accuracy for Balanced_Reward_Tradeoff: 25.80%
+
+
+Evaluating model: Efficiency_Focused, hidden_dim=128, lr=0.0005, gamma=0.99
+Evaluation Accuracy: 26.80%
+Final Accuracy for Efficiency_Focused: 26.80%
+
+------------------------------------------------------------------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+hotpot
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 69.20%
+Final Accuracy for High_Accuracy: 69.20%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 61.00%
+Final Accuracy for Balanced: 61.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 62.00%
+Final Accuracy for Efficiency_Focused: 62.00%
+
+2wiki
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 71.60%
+Final Accuracy for High_Accuracy: 71.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 53.00%
+Final Accuracy for Balanced: 53.00%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 56.80%
+Final Accuracy for Efficiency_Focused: 56.80%
+
+musique
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 21.60%
+Final Accuracy for High_Accuracy: 21.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 27.80%
+Final Accuracy for Balanced: 27.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 26.60%
+Final Accuracy for Efficiency_Focused: 26.60%
+
+
+------------------------------------------------------------------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+hotpot
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 67.80%
+Final Accuracy for High_Accuracy: 67.80%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 67.80%
+Final Accuracy for Balanced: 67.80%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 66.00%
+Final Accuracy for Efficiency_Focused: 66.00%
+
+2wiki
+
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 74.00%
+Final Accuracy for High_Accuracy: 74.00%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 77.60%
+Final Accuracy for Balanced: 77.60%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 69.00%
+Final Accuracy for Efficiency_Focused: 69.00%
+
+musique
+
+Evaluating model: High_Accuracy
+Evaluation Accuracy: 41.60%
+Final Accuracy for High_Accuracy: 41.60%
+
+
+Evaluating model: Balanced
+Evaluation Accuracy: 32.40%
+Final Accuracy for Balanced: 32.40%
+
+
+Evaluating model: Efficiency_Focused
+Evaluation Accuracy: 38.20%
+Final Accuracy for Efficiency_Focused: 38.20%
+
+

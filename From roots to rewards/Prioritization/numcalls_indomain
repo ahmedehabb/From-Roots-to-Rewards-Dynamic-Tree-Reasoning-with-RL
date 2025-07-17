@@ -1,0 +1,125 @@
+Probtree: 
+num_calls: 100 * (1) + (100 * 3) + (250) * 2 = 960 calls
+--------------------------------------------------------------------------------
+hotpot llm calls:
+
+Greedy Solver
+num_calls 314
+--------------------
+RL (question only)
+
+balanced_num_calls 173
+efficiency_num_calls 177
+high_accuracy_num_calls 199
+
+--------------------
+RL (question + cb+ ob)
+
+balanced_num_calls 154
+efficiency_num_calls 167
+high_accuracy_num_calls 180
+
+--------------------
+RL (question + cb+ ob + reform)
+
+config High_Accuracy_Priority num calls 227
+config Balanced_Reward_Tradeoff num calls 205
+config Efficiency_Focused num calls 196
+config Exploration_Focused num calls 211
+
+--------------------
+RL (question + transformers)
+
+balanced_num_calls 144
+efficiency_num_calls 146
+high_accuracy_num_calls 178
+--------------------
+Random solver
+num llm calls: 346
+--------------------
+RL (question + cb+ ob + resampling)
+balanced_num_calls 480
+efficiency_num_calls 113
+high_accuracy_num_calls 480
+
+-----------------------------------------------------------------------------------
+musique llm calls:
+
+Greedy Solver
+llm_calls: 480
+--------------------
+RL (question only)
+
+balanced_num_calls 184
+efficiency_num_calls 241
+high_accuracy_num_calls 174
+
+--------------------
+RL (question + cb+ ob)
+
+balanced_num_calls 179
+efficiency_num_calls 185
+high_accuracy_num_calls 186
+
+--------------------
+RL (question + cb+ ob + reform)
+
+config High_Accuracy_Priority num calls 234
+config Balanced_Reward_Tradeoff num calls 237
+config Efficiency_Focused num calls 187
+config Exploration_Focused num calls 192
+--------------------
+RL (question + transformers)
+
+balanced_num_calls 165
+efficiency_num_calls 153
+high_accuracy_num_calls 180
+--------------------
+Random solver
+num llm calls: 324
+--------------------
+RL (question + cb+ ob + resampling)
+balanced_num_calls 503
+efficiency_num_calls 502
+high_accuracy_num_calls 493
+
+
+-----------------------------------------------------------------------------------
+2wiki llm calls:
+
+
+Greedy: 
+llm_calls: 232
+----------------------------------------
+RL model using Question only:
+
+balanced_num_calls 181
+efficiency_num_calls 177
+high_accuracy_num_calls 191
+----------------------------------------
+RL model using Question + cb + ob:
+
+balanced_num_calls 172
+efficiency_num_calls 192
+high_accuracy_num_calls 207
+----------------------------------------
+RL model using Question + cb + ob + reformulation :
+
+config High_Accuracy_Priority num calls 234
+config Balanced_Reward_Tradeoff num calls 233
+config Efficiency_Focused num calls 208
+config Exploration_Focused num calls 191
+----------------------------------------
+RL question only + Transformers 
+
+balanced_num_calls 167
+efficiency_num_calls 129
+high_accuracy_num_calls 201
+----------------------------------------
+Random: 
+num_calls 332
+----------------------------------------
+RL + resampling: 
+balanced_num_calls 324
+efficiency_num_calls 490
+high_accuracy_num_calls 274

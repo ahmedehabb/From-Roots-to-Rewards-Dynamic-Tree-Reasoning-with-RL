@@ -1,0 +1,289 @@
+(indomain)hotpotQA :
+
+# RL Approach with deep learning (using Question only)
+Method Counts for High_Accuracy:
+  Child: 104
+  CB: 281
+  OB: 115
+
+Method Counts for Balanced:
+  CB: 367
+  Child: 3
+  OB: 130
+
+Method Counts for Efficiency_Focused:
+  OB: 235
+  CB: 265
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob)
+Method Counts for High_Accuracy:
+  CB: 237
+  OB: 252
+  Child: 11
+
+Method Counts for Balanced:
+  CB: 400
+  OB: 91
+  Child: 9
+
+Method Counts for Efficiency_Focused:
+  CB: 250
+  OB: 247
+  Child: 3
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + Reformulation of question)
+Method Counts for High_Accuracy_Priority:
+  CB: 227
+  Child: 60
+  OB_REFORMULATE: 133
+  Child_REFORMULATE: 69
+  CB_REFORMULATE: 8
+  OB: 3
+
+Method Counts for Balanced_Reward_Tradeoff:
+  CB_REFORMULATE: 44
+  CB: 252
+  OB_REFORMULATE: 56
+  OB: 145
+  Child_REFORMULATE: 3
+
+Method Counts for Efficiency_Focused:
+  CB: 273
+  OB: 210
+  Child: 13
+  CB_REFORMULATE: 2
+  Child_REFORMULATE: 2
+
+Method Counts for Exploration_Focused:
+  CB: 360
+  CB_REFORMULATE: 40
+  OB: 27
+  OB_REFORMULATE: 27
+  Child_REFORMULATE: 45
+  Child: 1
+
+----------------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+
+Method Counts for High_Accuracy:
+  Child: 500
+
+Method Counts for Balanced:
+  OB: 308
+  CB: 192
+
+Method Counts for Efficiency_Focused:
+  OB: 188
+  CB: 312
+
+
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Method Counts for High_Accuracy:
+  ResampleTreeDecompositionThenSolve: 445
+  CB: 29
+  Child: 1
+  OB: 25
+
+Method Counts for Balanced:
+  ResampleTreeDecompositionThenSolve: 435
+  CB: 44
+  OB: 21
+
+Method Counts for Efficiency_Focused:
+  CB: 275
+  OB: 224
+  Child: 1
+
+------------------------------------------------------------------------------------------------------------------------
+MusiqueQA :
+# RL Approach with deep learning (using Question only)
+Method Counts for High_Accuracy:
+  CB: 394
+  Child: 7
+  OB: 99
+
+Method Counts for Balanced:
+  CB: 378
+  OB: 110
+  Child: 12
+
+Method Counts for Efficiency_Focused:
+  CB: 352
+  OB: 144
+  Child: 4
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob)
+Method Counts for High_Accuracy:
+  CB: 361
+  OB: 133
+  Child: 6
+
+Method Counts for Balanced:
+  CB: 360
+  OB: 135
+  Child: 5
+
+Method Counts for Efficiency_Focused:
+  CB: 334
+  OB: 136
+  Child: 30
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + Reformulation of question)
+Method Counts for High_Accuracy_Priority:
+  CB: 360
+  OB_REFORMULATE: 68
+  OB: 58
+  Child_REFORMULATE: 2
+  CB_REFORMULATE: 5
+  Child: 7
+
+Method Counts for Balanced_Reward_Tradeoff:
+  CB: 307
+  OB: 88
+  CB_REFORMULATE: 81
+  Child: 2
+  Child_REFORMULATE: 18
+  OB_REFORMULATE: 4
+
+Method Counts for Efficiency_Focused:
+  CB: 328
+  OB: 126
+  CB_REFORMULATE: 33
+  Child_REFORMULATE: 6
+  Child: 7
+
+-----------------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+Method Counts for High_Accuracy:
+  CB: 417
+  OB: 83
+
+Method Counts for Balanced:
+  CB: 395
+  OB: 105
+
+Method Counts for Efficiency_Focused:
+  CB: 331
+  OB: 157
+  Child: 12
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+Method Counts for High_Accuracy:
+  ResampleTreeDecompositionThenSolve: 377
+  CB: 95
+  OB: 24
+  Child: 4
+
+Method Counts for Balanced:
+  ResampleTreeDecompositionThenSolve: 435
+  CB: 47
+  OB: 15
+  Child: 3
+
+Method Counts for Efficiency_Focused:
+  ResampleTreeDecompositionThenSolve: 432
+  OB: 12
+  CB: 54
+  Child: 2
+
+------------------------------------------------------------------------------------------------------------------------
+2wikiQA :
+# RL Approach with deep learning (using Question only)
+
+Method Counts for High_Accuracy:
+  CB: 233
+  Child: 179
+  OB: 88
+
+Method Counts for Balanced:
+  CB: 322
+  OB: 178
+
+Method Counts for Efficiency_Focused:
+  CB: 377
+  OB: 123
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob)
+Method Counts for High_Accuracy:
+  CB: 355
+  OB: 124
+  Child: 21
+
+Method Counts for Balanced:
+  CB: 302
+  OB: 196
+  Child: 2
+
+Method Counts for Efficiency_Focused:
+  CB: 385
+  OB: 111
+  Child: 4
+
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + Reformulation of question)
+
+Method Counts for High_Accuracy_Priority:
+  CB: 247
+  OB: 59
+  Child_REFORMULATE: 57
+  OB_REFORMULATE: 39
+  Child: 83
+  CB_REFORMULATE: 15
+
+Method Counts for Balanced_Reward_Tradeoff:
+  CB: 273
+  CB_REFORMULATE: 67
+  OB: 101
+  OB_REFORMULATE: 49
+  Child: 10
+
+Method Counts for Efficiency_Focused:
+  CB: 281
+  OB: 209
+  Child_REFORMULATE: 8
+  Child: 2
+
+----------------------
+# RL Approach with deep learning (Transformers networks) using question only in state
+Method Counts for High_Accuracy:
+  CB: 485
+  OB: 15
+
+Method Counts for Balanced:
+  CB: 267
+  OB: 233
+
+Method Counts for Efficiency_Focused:
+  CB: 485
+  OB: 15
+
+
+----------------------
+# RL Approach with deep learning (using Question + cb + ob + RESAMPLING ACTION)
+
+Method Counts for High_Accuracy:
+  CB: 198
+  ResampleTreeDecompositionThenSolve: 90
+  OB: 183
+  Child: 29
+
+Method Counts for Balanced:
+  ResampleTreeDecompositionThenSolve: 479
+  OB: 11
+  CB: 8
+  Child: 2
+
+Method Counts for Efficiency_Focused:
+  ResampleTreeDecompositionThenSolve: 475
+  CB: 13
+  OB: 12
+
