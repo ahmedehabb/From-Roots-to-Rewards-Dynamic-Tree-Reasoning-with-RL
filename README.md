@@ -77,6 +77,14 @@ To assess generalization and robustness, we evaluate under the following configu
 2. Cross-domain Generalization: Train on one domain and test on another (e.g., HotpotQA → 2Wiki/MuSiQue)
 3. Multi-domain Generalization: Train across all datasets and test across all splits
 
+#### Accuracy-Cost Tradeoff
+We assess the tradeoff between accuracy and computational cost (i.e., number of LLM calls), a critical factor for real-world deployment.
+
+Each point in the figure below represents a (model, configuration, dataset) tuple. The x-axis shows total LLM calls, and the y-axis reflects final answer accuracy. We use different colors for models, marker shapes for training regimes, and subplots for dataset domains.
+
+<div align="center"> <img src="figures/accuracy_cost_tradeoff.png" width="100%" height="100%" /> </div>
+
+
 ## File Structure
 ```
 ProbTree/
