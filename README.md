@@ -1,7 +1,7 @@
 # From Roots to Rewards: Dynamic Tree Reasoning with RL (Dynamic ProbTree)
 Source code and experiments for our enhanced Probabilistic Tree-of-Thought (ProbTree) framework, which introduces dynamic reinforcement learning for adaptive and efficient tree-structured reasoning on knowledge-intensive complex questions.
 
-Source code for findings of EMNLP 2023 paper "Probabilistic Tree-of-thought Reasoning for Answering Knowledge-intensive Complex Questions".
+Source code for findings of paper "From Roots to Rewards: Dynamic Tree Reasoning with RL".
 
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/Neo-Zhangjiajie/ProbTree/issues)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/Apache-2.0)
